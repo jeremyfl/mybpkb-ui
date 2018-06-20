@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBPKB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="node_modules/easy-autocomplete/dist/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="node_modules/easy-autocomplete/dist/easy-autocomplete.themes.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="node_modules/easy-autocomplete/dist/jquery.easy-autocomplete.min.js"></script>
+    <script src="assets/js/autoNumeric.js"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+
+<body style="background-color:#fafafa;">
+    <nav class="navbar navbar-dark navbar-expand" style="background-color: transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <strong>MYBPKB</strong>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="#">Ajukan</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="#">Tentang Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="gedung-title">
+        <div id="title">
+            <h1 class="text-center text-light">Ajukan Sekarang</h1>
+            <h2 class="text-center" style="color: rgba(255, 255 , 255, 0.8)">WOM Finance</h2>
+        </div>
+    </div>
+    
+    
+    <div class="container" id="floated-card">
+        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1" style="margin-top:50px;">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post" target="_self">
+                        <h6>Data Pribadi</h6>
+                        <div class="form-group">
+                            <input class="form-control active-input" type="email" name="email" placeholder="Masukan Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control active-input" type="number" name="nomor-hp" required="" placeholder="Masukan Nomor HP">
+                            <small class="form-text text-muted">Nomor WhatsApp atau Telepon yang bisa dihubungi.</small>
+                        </div>
+                        <h6>Data Kendaraan</h6>
+                        <div class="form-group">
+                            <input class="form-control active-input" type="text" required="" placeholder="Masukan Merk &amp; Jenis Kendaraan" autocomplete="off"
+                                id="input-mobil">
+                            <input type="hidden" id="id-kendaraan" name="idKendaraan" class="active-input">
+                            <small class="form-text text-muted">Contoh Format : Avanza B51A</small>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control active-input" type="text" required="" placeholder="Masukan Jumlah Pinjaman" id="rupiah">
+                            <input type="hidden" name="ekspetasiPinjaman" id="ekspetasiPinjaman" class="active-input">
+                            <small class="form-text text-muted">Ekspetasi Pinjaman dengan minimal Rp30,000,000 sampai maksimal Rp100,000,000</small>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control active-input" name="tenorPinjaman" required="">
+                                <option value="" selected="">Pilih Tenor Pinjaman</option>
+                                <option value="12">1 Tahun</option>
+                                <option value="24">2 Tahun</option>
+                                <option value="36">3 Tahun</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button id="buttonAjukan" class="btn btn-primary btn-block btn-lg" type="submit">Ajukan Pinjaman</button>
+                </div>
+            </div>
+            <div id="hasil"></div>
+        </div>
+    </div>
+</body>
+
+</html>
