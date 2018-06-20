@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBPKB</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -16,30 +16,46 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
     <script src="node_modules/easy-autocomplete/dist/jquery.easy-autocomplete.min.js"></script>
     <script src="assets/js/autoNumeric.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/app.js"></script>
 </head>
 
 <body style="background-color:#fafafa;">
-    <nav class="navbar navbar-dark navbar-expand" style="background-color: transparent">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <strong>MYBPKB</strong>
+                <img src="http://www.mybpkb.com/wp-content/uploads/2018/02/cropped-Site-logo.png" width="200" height="60" alt="">
             </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                <span class="sr-only">Toggle navigation</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" href="#">Ajukan</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link disabled" href="#">Tentang Kami</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Tentang Kami
+                        </a>
                     </li>
                 </ul>
+
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success">
+                            <strong>Ajukan Pinjaman</strong>
+                        </button>
+                    </li>
+                </div>
             </div>
         </div>
     </nav>
@@ -50,34 +66,50 @@
             <h2 class="text-center" style="color: rgba(255, 255 , 255, 0.8)">WOM Finance</h2>
         </div>
     </div>
-    
-    
+
     <div class="container" id="floated-card">
         <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1" style="margin-top:50px;">
             <div class="card">
                 <div class="card-body">
                     <form method="post" target="_self">
-                        <h6>Data Pribadi</h6>
+                        <h5 style="margin-bottom: 25px">Data Pribadi</h5>
                         <div class="form-group">
-                            <input class="form-control active-input" type="email" name="email" placeholder="Masukan Email" required>
+                            <label for="">Email</label>
+                            <input class="form-control active-input" type="email" name="email" placeholder="Contoh: sam@gmail.com" required>
                         </div>
                         <div class="form-group">
-                            <input class="form-control active-input" type="number" name="nomor-hp" required="" placeholder="Masukan Nomor HP">
-                            <small class="form-text text-muted">Nomor WhatsApp atau Telepon yang bisa dihubungi.</small>
+                            <label for="">Nomor HP</label>
+                            <input class="form-control active-input" type="number" name="nomorHp" required="" placeholder="Contoh: 083897613570">
+                            <small class="form-text text-muted">WhatsApp / SMS yang bisa dihubungi</small>
                         </div>
-                        <h6>Data Kendaraan</h6>
+                        <h5 style="margin: 25px 0;">Data Kendaraan</h5>
+
                         <div class="form-group">
-                            <input class="form-control active-input" type="text" required="" placeholder="Masukan Merk &amp; Jenis Kendaraan" autocomplete="off"
-                                id="input-mobil">
+                            <label for="">Jenis Kendaraan</label>
+                            <input class="form-control active-input" type="text" required="" placeholder="Contoh: HONDA ALL NEW JAZZ IVTEC RS 1.5 AT 2017"
+                                autocomplete="off" id="input-mobil">
                             <input type="hidden" id="id-kendaraan" name="idKendaraan" class="active-input">
-                            <small class="form-text text-muted">Contoh Format : Avanza B51A</small>
+                            <small class="form-text text-muted">Merk Jenis & Tahun Keluaran</small>
                         </div>
+
                         <div class="form-group">
-                            <input class="form-control active-input" type="text" required="" placeholder="Masukan Jumlah Pinjaman" id="rupiah">
+                            <label for="">Usia Kendaraan</label>
+                            <div class="input-group mb-2">
+                                <input type="number" class="form-control active-input" value="0">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Tahun</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Ekspetasi Nominal Pinjaman</label>
+                            <input class="form-control active-input" type="text" required="" placeholder="Contoh: 30.000.000" id="rupiah">
                             <input type="hidden" name="ekspetasiPinjaman" id="ekspetasiPinjaman" class="active-input">
-                            <small class="form-text text-muted">Ekspetasi Pinjaman dengan minimal Rp30,000,000 sampai maksimal Rp100,000,000</small>
+                            <small class="form-text text-muted">Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000</small>
                         </div>
                         <div class="form-group">
+                            <label for="">Tenor Pinjaman</label>
                             <select class="form-control active-input" name="tenorPinjaman" required="">
                                 <option value="" selected="">Pilih Tenor Pinjaman</option>
                                 <option value="12">1 Tahun</option>

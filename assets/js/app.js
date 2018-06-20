@@ -1,19 +1,4 @@
 $(document).ready(function () {
-    function hitung(inputData) {
-        $.ajax({
-            type: "POST",
-            url: "http://127.0.0.1:3333/api/simulasi/mobil",
-            data: inputData,
-            success: function (response) {
-                console.log(response)
-                elementHasil(response)
-            },
-            error: function (response) {
-                alert('Gagal menghitung')
-            }
-        })
-    }
-
     function getListKendaraan() {
         $.ajax({
             type: "GET",
@@ -34,34 +19,103 @@ $(document).ready(function () {
                 }
                 $("#input-mobil").easyAutocomplete(options)
             },
-            error: function () {
+            error: function (response) {
+                console.log(response)
                 alert("Gagal mendapatkan data dari server!")
             }
         })
     }
 
+    function inputFilter(inputData) {
+        if (inputData.tenorPinjaman.length <= 0 || inputData.email.length <= 0 || inputData.ekspetasiPinjaman.length <= 0 || inputData.idKendaraan.length <= 0) {
+            swal({
+                title: "Maaf!",
+                text: "Lengkapi dahulu form anda",
+                icon: "warning",
+                timer: 1000,
+                buttons: false,
+            })
+
+            return true
+        } else if (inputData.ekspetasiPinjaman < 20000000 || inputData.ekspetasiPinjaman > 1000000000000) {
+            swal({
+                title: "Maaf!",
+                text: "Ekspetasi pinjaman tidak sesuai ketentuan",
+                icon: "warning",
+                timer: 1000,
+                buttons: false,
+            });
+            return true
+        } else if (inputData.nomorHp.length !== 12) {
+            swal({
+                title: "Maaf!",
+                text: "Nomor HP tidak valid",
+                icon: "warning",
+                timer: 1000,
+                buttons: false,
+            });
+            return true
+        } else if (inputData.idKendaraan.length == 0) {
+            swal({
+                title: "Maaf!",
+                text: "Jenis kendaraan anda tidak ditemukan",
+                icon: "warning",
+                timer: 1000,
+                buttons: false,
+            });
+            return true
+        } else {
+            return false
+        }
+    }
+
+    function hitung(inputData) {
+        $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:3333/api/simulasi/mobil",
+            data: inputData,
+            beforeSend: function () {
+                $("#buttonAjukan").text("Loading ..");
+            },
+            success: function (response) {
+                elementHasil(response)
+                $("#buttonAjukan").text("Ajukan lagi");
+            },
+            error: function (response) {
+                alert('Gagal menghitung')
+            }
+        })
+    }
+
     function elementHasil(response) {
-        $(`
-            <div class="card" style="margin: 20px 0;">
+        $("#hasil").html(
+            `
+            <div class="alert alert-success" style="margin: 20px 0;">
+                <h6 class="alert-heading">Kami akan segera menghubungi anda!</h6>
+                Terimakasih telah mengajukan pinjaman dana ke kami.
+            </div>
+
+            <div class="card">
             <div class="card-header">Hasil Simulasi</div>
             <div class="card-table">
-            <table class="table">
+            <table class="table table-hover">
             <tbody>
                 <tr>
                     <th>Total Pencairan</th>
                     <td>` + response.total + `</td>
                 </tr>
                 <tr>
-                    <th>Total Angsuran</th>
+                    <th>Total Angsuran (` + response.tenorPeminjaman + `x)</th>
                     <td>` + response.angsuran + `</td>
                 </tr>
             </tbody>
             </table>
             </div>
             </div>
-        `).appendTo("#hasil").hide().fadeIn()
+        `
+        ).hide().fadeIn()
     }
-    
+
     // rupiah input
     $('#rupiah').autoNumeric('init')
     $("#rupiah").change(function () {
@@ -79,11 +133,11 @@ $(document).ready(function () {
             inputData[$(this).attr("name")] = $(this).val();
         });
 
-        if (inputData.idKendaraan.length == 0) {
-            alert("Maaf, jenis kendaraan anda tidak ada dalam database kami")
-        } 
-        else {
+        if (!inputFilter(inputData)) {
             hitung(inputData)
+            $('html, body').animate({
+                scrollTop: $("#hasil").offset().top
+            }, 500);
         }
 
     })
