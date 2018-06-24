@@ -14,8 +14,6 @@ body {
 #gedung-title {
     width: 100%;
     height: 70vh;
-    background: url('../img/gedungwom.png');
-    background-size: cover;
     position: relative;
 }
 #title {

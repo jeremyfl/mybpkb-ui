@@ -19,9 +19,9 @@ $(document).ready(function () {
                 }
                 $("#input-mobil").easyAutocomplete(options)
             },
-            error: function (response) {
-                console.log(response)
-                alert("Gagal mendapatkan data dari server!")
+            error: function (error) {
+                console.log(error)
+                // alert("Gagal mendapatkan data dari server!")
             }
         })
     }
