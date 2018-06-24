@@ -1,0 +1,64 @@
+<div id="gedung-title">
+    <div id="title">
+        <h1 class="text-center text-light">Ajukan Sekarang</h1>
+        <h2 class="text-center" style="color: rgba(255, 255 , 255, 0.8)">WOM Finance</h2>
+    </div>
+</div>
+
+<div class="container" id="floated-card">
+    <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1" style="margin-top:50px;">
+        <div class="card">
+            <div class="card-body">
+                <form method="post" target="_self">
+                    <h5 style="margin-bottom: 25px">Data Pribadi</h5>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input class="form-control active-input" type="email" name="email" placeholder="Contoh: sam@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nomor HP</label>
+                        <input class="form-control active-input" type="number" name="nomorHp" required="" placeholder="Contoh: 083897613570">
+                        <small class="form-text text-muted">WhatsApp / SMS yang bisa dihubungi</small>
+                    </div>
+                    <h5 style="margin: 25px 0;">Data Kendaraan</h5>
+
+                    <div class="form-group">
+                        <label for="">Jenis Kendaraan</label>
+                        <input class="form-control active-input" type="text" required="" placeholder="Contoh: HONDA ALL NEW JAZZ IVTEC RS 1.5 AT 2017"
+                            autocomplete="off" id="input-mobil">
+                        <input type="hidden" id="id-kendaraan" name="idKendaraan" class="active-input">
+                        <small class="form-text text-muted">Merk Jenis & Tahun Keluaran</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Usia Kendaraan</label>
+                        <div class="input-group mb-2">
+                            <input name="usiaKendaraan" type="number" class="form-control active-input" value="1">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Tahun</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Ekspetasi Nominal Pinjaman</label>
+                        <input class="form-control active-input" type="text" required="" placeholder="Contoh: 30.000.000" id="rupiah">
+                        <input type="hidden" name="ekspetasiPinjaman" id="ekspetasiPinjaman" class="active-input">
+                        <small class="form-text text-muted">Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Tenor Pinjaman</label>
+                        <select class="form-control active-input" name="tenorPinjaman" required="">
+                            <option value="" selected="">Pilih Tenor Pinjaman</option>
+                            <option value="12">1 Tahun</option>
+                            <option value="24">2 Tahun</option>
+                            <option value="36">3 Tahun</option>
+                        </select>
+                    </div>
+                </form>
+                <button id="buttonAjukan" class="btn btn-primary btn-block btn-lg" type="submit">Ajukan Pinjaman</button>
+            </div>
+        </div>
+        <div id="hasil"></div>
+    </div>
+</div>
