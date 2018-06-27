@@ -1,2 +1,2 @@
-# MyBPKB
-## Single page application using jQuery router
+# Front end micro apps MyBPKB
+SPA with jQuery Router
