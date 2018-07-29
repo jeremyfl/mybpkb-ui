@@ -1,5 +1,6 @@
 {
   "name": "mybpkb-app",
+  "homepage": "https://new.mybpkb.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
