@@ -25,6 +25,7 @@ class App extends Component {
             <Route exact path="/simulasi/mobil" component={MobilRequest} />
             <Route exact path="/simulasi/motor" component={Motor} />
             <Route exact path="/contact" component={Contact} />
+            <Route render={() => <p>Not Found</p>} />
           </Switch>
         </div>
       </Router>
