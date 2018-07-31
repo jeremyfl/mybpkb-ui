@@ -31,10 +31,12 @@ export default class MobilRequest extends Component {
   autoCompleteMobil = () => {
     const self = this;
     let listKendaraan = this.state.allMobil;
+
     let options = {
       data: listKendaraan,
       getValue: "nama",
       list: {
+        maxNumberOfElements: 10,
         match: {
           enabled: true
         },
@@ -196,6 +198,7 @@ export default class MobilRequest extends Component {
                       placeholder="Jumlah Ekspetasi Pinjaman"
                       thousandSeparator={true}
                       prefix={"Rp"}
+                      autoComplete="off"
                     />
                     <small className="form-text text-muted">
                       Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000

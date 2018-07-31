@@ -1,3 +1,6 @@
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
 .footer-basic {
   padding: 40px 0;
   background-color: #fff;
