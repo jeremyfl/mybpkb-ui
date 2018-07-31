@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import $ from "jquery";
-import AutoNumeric from "autonumeric";
+import CurrencyFormat from "react-currency-format";
 
 window.jQuery = $;
 window.$ = $;
@@ -19,7 +19,6 @@ export default class MobilRequest extends Component {
 
   componentDidMount = () => {
     $("#hasilSimulasi").hide();
-    new AutoNumeric("#rupiah", { currencySymbol: "Rp." });
 
     const self = this;
     axios.get("api/mobil").then(response => {
@@ -125,6 +124,16 @@ export default class MobilRequest extends Component {
               <form onSubmit={this.submitButton}>
                 <div className="card-body">
                   <div className="form-group">
+                    <label>Nama</label>
+                    <input
+                      className="form-control active-input"
+                      type="text"
+                      name="nama"
+                      placeholder="Nama Lengkap"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
                     <label>Email</label>
                     <input
                       className="form-control active-input"
@@ -147,7 +156,6 @@ export default class MobilRequest extends Component {
                       WhatsApp / SMS yang bisa dihubungi
                     </small>
                   </div>
-
                   <div className="form-group">
                     <label>Alamat</label>
                     <input
@@ -157,7 +165,6 @@ export default class MobilRequest extends Component {
                       placeholder="Alamat Lengkap"
                     />
                   </div>
-
                   <div className="form-group">
                     <label>Kota</label>
                     <input
@@ -167,7 +174,6 @@ export default class MobilRequest extends Component {
                       placeholder="Contoh: Jakarta"
                     />
                   </div>
-
                   <div className="form-group">
                     <label>Jenis Kendaraan</label>
                     <input
@@ -182,16 +188,14 @@ export default class MobilRequest extends Component {
                       Merk Jenis & Tahun Keluaran
                     </small>
                   </div>
-
                   <div className="form-group">
                     <label>Ekspetasi Nominal Pinjaman</label>
-                    <input
-                      className="form-control active-input"
-                      type="text"
-                      required=""
-                      placeholder="Contoh: 30.000.000"
-                      id="rupiah"
+                    <CurrencyFormat
                       name="ekspetasiPinjaman"
+                      className="form-control active-input"
+                      placeholder="Jumlah Ekspetasi Pinjaman"
+                      thousandSeparator={true}
+                      prefix={"Rp"}
                     />
                     <small className="form-text text-muted">
                       Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000
