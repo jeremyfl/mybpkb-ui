@@ -5,7 +5,7 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://178.128.19.182:3333/";
+axios.defaults.baseURL = "https://api.mybpkb.com/";
 axios.defaults.withCredentials = true;
 
 ReactDOM.render(<App />, document.getElementById("root"));

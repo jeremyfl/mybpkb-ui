@@ -80,9 +80,9 @@ export default class MobilRequest extends Component {
     return (
       <section>
         <div
-          className="highlight-blue"
+          className="highlight-blue gedung-wom"
           style={{
-            background: "#1e6add",
+            // background: "#1e6add",
             paddingTop: "100px",
             paddingBottom: "100px"
           }}
@@ -145,25 +145,10 @@ export default class MobilRequest extends Component {
                   </div>
 
                   <div className="form-group">
-                    <label>Usia Kendaraan</label>
-                    <div className="input-group mb-2">
-                      <input
-                        name="usiaKendaraan"
-                        type="number"
-                        className="form-control active-input"
-                        defaultValue="1"
-                      />
-                      <div className="input-group-prepend">
-                        <div className="input-group-text">Tahun</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="form-group">
                     <label>Ekspetasi Nominal Pinjaman</label>
                     <input
                       className="form-control active-input"
-                      type="text"
+                      type="number"
                       required=""
                       placeholder="Contoh: 30.000.000"
                       id="rupiah"
