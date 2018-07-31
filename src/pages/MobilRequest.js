@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import $ from "jquery";
+import AutoNumeric from "autonumeric";
 
 window.jQuery = $;
 window.$ = $;
@@ -18,6 +19,7 @@ export default class MobilRequest extends Component {
 
   componentDidMount = () => {
     $("#hasilSimulasi").hide();
+    new AutoNumeric("#rupiah", { currencySymbol: "Rp." });
 
     const self = this;
     axios.get("api/mobil").then(response => {
@@ -51,12 +53,19 @@ export default class MobilRequest extends Component {
 
   submitButton = event => {
     event.preventDefault();
+
+    let rupiah = event.target.ekspetasiPinjaman.value;
+    rupiah = rupiah.replace("Rp", "");
+    rupiah = rupiah.split(",").join("");
+    rupiah = rupiah.replace(".", "");
+    rupiah = Number(rupiah);
+
     const self = this;
     const choosenMobil = this.state.choosenMobil;
 
     const request = {
       id: choosenMobil,
-      pinjaman: event.target.ekspetasiPinjaman.value,
+      pinjaman: rupiah,
       tenor: event.target.tenorPinjaman.value
     };
 
@@ -64,7 +73,17 @@ export default class MobilRequest extends Component {
       self.setState({
         hasilSimulasi: response.data
       });
+
+      // show table
       $("#hasilSimulasi").show();
+
+      // scroll to table
+      $("html, body").animate(
+        {
+          scrollTop: $("#hasilSimulasi").offset().top
+        },
+        500
+      );
     });
   };
 
@@ -130,6 +149,26 @@ export default class MobilRequest extends Component {
                   </div>
 
                   <div className="form-group">
+                    <label>Alamat</label>
+                    <input
+                      className="form-control active-input"
+                      type="text"
+                      required=""
+                      placeholder="Alamat Lengkap"
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label>Kota</label>
+                    <input
+                      className="form-control active-input"
+                      type="text"
+                      required=""
+                      placeholder="Contoh: Jakarta"
+                    />
+                  </div>
+
+                  <div className="form-group">
                     <label>Jenis Kendaraan</label>
                     <input
                       className="form-control active-input"
@@ -148,7 +187,7 @@ export default class MobilRequest extends Component {
                     <label>Ekspetasi Nominal Pinjaman</label>
                     <input
                       className="form-control active-input"
-                      type="number"
+                      type="text"
                       required=""
                       placeholder="Contoh: 30.000.000"
                       id="rupiah"
@@ -198,9 +237,8 @@ export default class MobilRequest extends Component {
               <div className="table-responsive">
                 <div className="card-body">
                   <div className="alert alert-success" role="alert">
-                    <strong>Hore!, </strong>
-                    berikut perhitungan dari simulasi, syarat dan ketentuan
-                    berlaku.
+                    <strong>Terimakasih,</strong> kami akan segera menghubungi
+                    anda.
                   </div>
                   <table className="table table-hover">
                     <thead>

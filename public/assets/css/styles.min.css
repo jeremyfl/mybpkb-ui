@@ -51,8 +51,8 @@
 }
 .gedung-wom {
   background-image: linear-gradient(
-      rgba(30, 106, 221, 0.9),
-      rgba(30, 106, 221, 0.9)
+      rgba(30, 106, 221, 0.7),
+      rgba(30, 106, 221, 0.7)
     ),
     url("https://image.ibb.co/e4xUZT/gedungwom.jpg");
   background-position: top center;
