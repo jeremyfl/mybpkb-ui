@@ -118,7 +118,7 @@ export default class MobilRequest extends Component {
             <div className="intro">
               <h2 className="text-center">Simulasi Mobil</h2>
               <p className="lead text-center">
-                Kredit Tanpa Agunan WOM Finance
+                Pinjaman Jaminan BPKB Mobil Wom Finance
               </p>
             </div>
           </div>
