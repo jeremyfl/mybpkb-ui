@@ -66,6 +66,11 @@ export default class MobilRequest extends Component {
 
     const request = {
       id: choosenMobil,
+      nama: event.target.nama.value,
+      no_tlp: event.target.no_tlp.value,
+      email: event.target.email.value,
+      alamat: event.target.alamat.value,
+      kota: event.target.kota.value,
       pinjaman: rupiah,
       tenor: event.target.tenorPinjaman.value
     };
@@ -150,7 +155,7 @@ export default class MobilRequest extends Component {
                     <input
                       className="form-control active-input"
                       type="number"
-                      name="nomorHp"
+                      name="no_tlp"
                       required=""
                       placeholder="Contoh: 083897613570"
                     />
@@ -163,6 +168,7 @@ export default class MobilRequest extends Component {
                     <input
                       className="form-control active-input"
                       type="text"
+                      name="alamat"
                       required=""
                       placeholder="Alamat Lengkap"
                     />
@@ -173,6 +179,7 @@ export default class MobilRequest extends Component {
                       className="form-control active-input"
                       type="text"
                       required=""
+                      name="kota"
                       placeholder="Contoh: Jakarta"
                     />
                   </div>
