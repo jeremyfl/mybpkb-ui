@@ -93,6 +93,8 @@ export default class MobilRequest extends Component {
     });
   };
 
+  buttonHarga = () => {};
+
   // future function for dynamic search and fetch mobil
   fetchKendaraan = event => {
     // let listKendaraan = this.state.allMobil;
@@ -169,8 +171,8 @@ export default class MobilRequest extends Component {
                       className="form-control active-input"
                       type="text"
                       name="alamat"
-                      required=""
                       placeholder="Alamat Lengkap"
+                      required=""
                     />
                   </div>
                   <div className="form-group">
@@ -178,9 +180,9 @@ export default class MobilRequest extends Component {
                     <input
                       className="form-control active-input"
                       type="text"
-                      required=""
                       name="kota"
                       placeholder="Contoh: Jakarta"
+                      required=""
                     />
                   </div>
                   <div className="form-group">
@@ -188,10 +190,10 @@ export default class MobilRequest extends Component {
                     <input
                       className="form-control active-input"
                       type="text"
-                      required=""
                       placeholder="Contoh: HONDA ALL NEW JAZZ IVTEC RS 1.5 AT 2017"
                       autoComplete="off"
                       id="input-mobil"
+                      required=""
                     />
                     <small className="form-text text-muted">
                       Merk Jenis & Tahun Keluaran
@@ -201,14 +203,54 @@ export default class MobilRequest extends Component {
                     <label>Ekspetasi Nominal Pinjaman</label>
                     <CurrencyFormat
                       name="ekspetasiPinjaman"
-                      className="form-control active-input"
+                      className="form-control active-input ekspetasiPinjaman"
                       placeholder="Jumlah Ekspetasi Pinjaman"
                       thousandSeparator={true}
                       prefix={"Rp"}
                       autoComplete="off"
                     />
                     <small className="form-text text-muted">
-                      Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000
+                      <button
+                        type="button"
+                        className="btn btn-info btn-sm button-pilihan-harga"
+                        onClick={() => {
+                          $(".ekspetasiPinjaman").val("30000000");
+                          $(".ekspetasiPinjaman").attr("disabled", true);
+                        }}
+                      >
+                        30.000.000
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-info btn-sm button-pilihan-harga"
+                        onClick={() => {
+                          $(".ekspetasiPinjaman").val("50000000");
+                          $(".ekspetasiPinjaman").attr("disabled", true);
+                        }}
+                      >
+                        50.000.000
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-info btn-sm button-pilihan-harga"
+                        onClick={() => {
+                          $(".ekspetasiPinjaman").val("100000000");
+                          $(".ekspetasiPinjaman").attr("disabled", true);
+                        }}
+                      >
+                        100.000.000
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-warning btn-sm button-pilihan-harga"
+                        onClick={() => {
+                          $(".ekspetasiPinjaman").val("Peminjaman maksimal");
+                          $(".ekspetasiPinjaman").attr("disabled", true);
+                        }}
+                      >
+                        Pencairan Maksimal
+                      </button>
+                      {/* Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000 */}
                     </small>
                   </div>
                   <div className="form-group">

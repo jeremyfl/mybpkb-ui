@@ -5,13 +5,14 @@ import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import axios from "axios";
 
-let env = "local";
+axios.defaults.baseURL = "https://api.mybpkb.com/";
 
-if (env === "local") {
-  axios.defaults.baseURL = "http://127.0.0.1:3333/";
-} else {
-  axios.defaults.baseURL = "https://api.mybpkb.com/";
-}
+let env = "local";
+// if (env === "local") {
+//   axios.defaults.baseURL = "http://127.0.0.1:3333/";
+// } else {
+//   axios.defaults.baseURL = "https://api.mybpkb.com/";
+// }
 
 axios.defaults.withCredentials = true;
 
