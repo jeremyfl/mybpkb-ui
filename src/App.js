@@ -1,11 +1,5 @@
-import React, {
-  Component
-} from "../../../Library/Caches/typescript/2.9/node_modules/@types/react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from "../../../Library/Caches/typescript/2.9/node_modules/@types/react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/Header";
 
