@@ -19,6 +19,7 @@ export default class MobilRequest extends Component {
 
   componentDidMount = () => {
     $("#hasilSimulasi").hide();
+    $(".isi-manual").hide();
 
     const self = this;
     axios.get("api/mobil").then(response => {
@@ -81,22 +82,27 @@ export default class MobilRequest extends Component {
       tenor: event.target.tenorPinjaman.value
     };
 
-    axios.post("api/mobil/simulasi", request).then(response => {
-      self.setState({
-        hasilSimulasi: response.data
+    axios
+      .post("api/mobil/simulasi", request)
+      .then(response => {
+        self.setState({
+          hasilSimulasi: response.data
+        });
+
+        // show table
+        $("#hasilSimulasi").show();
+
+        // scroll to table
+        $("html, body").animate(
+          {
+            scrollTop: $("#hasilSimulasi").offset().top
+          },
+          500
+        );
+      })
+      .catch(error => {
+        alert(error.response.data);
       });
-
-      // show table
-      $("#hasilSimulasi").show();
-
-      // scroll to table
-      $("html, body").animate(
-        {
-          scrollTop: $("#hasilSimulasi").offset().top
-        },
-        500
-      );
-    });
   };
 
   // future function for dynamic search and fetch mobil
@@ -220,6 +226,7 @@ export default class MobilRequest extends Component {
                         onClick={() => {
                           $(".ekspetasiPinjaman").val("Rp30,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
+                          $(".isi-manual").show();
                         }}
                       >
                         30.000.000
@@ -230,6 +237,7 @@ export default class MobilRequest extends Component {
                         onClick={() => {
                           $(".ekspetasiPinjaman").val("Rp50,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
+                          $(".isi-manual").show();
                         }}
                       >
                         50.000.000
@@ -238,8 +246,9 @@ export default class MobilRequest extends Component {
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp1000,000,000");
+                          $(".ekspetasiPinjaman").val("Rp100,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
+                          $(".isi-manual").show();
                         }}
                       >
                         100.000.000
@@ -250,9 +259,21 @@ export default class MobilRequest extends Component {
                         onClick={() => {
                           $(".ekspetasiPinjaman").val("Pencairan maksimal");
                           $(".ekspetasiPinjaman").attr("disabled", true);
+                          $(".isi-manual").show();
                         }}
                       >
                         Pencairan Maksimal
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-primary btn-sm button-pilihan-harga isi-manual"
+                        onClick={() => {
+                          $(".ekspetasiPinjaman").val("");
+                          $(".ekspetasiPinjaman").attr("disabled", false);
+                          $(".isi-manual").hide();
+                        }}
+                      >
+                        Isi Manual
                       </button>
                       {/* Minimal Rp20,000,000 sampai maksimal Rp100,000,000,000 */}
                     </small>
