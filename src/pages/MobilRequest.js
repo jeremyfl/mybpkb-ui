@@ -55,11 +55,17 @@ export default class MobilRequest extends Component {
   submitButton = event => {
     event.preventDefault();
 
+    // rupiah means ekspetasi pinjaman, but it depens, if it max request it should be not rupiah
     let rupiah = event.target.ekspetasiPinjaman.value;
-    rupiah = rupiah.replace("Rp", "");
-    rupiah = rupiah.split(",").join("");
-    rupiah = rupiah.replace(".", "");
-    rupiah = Number(rupiah);
+
+    if ((rupiah = "Pencairan maksimal")) {
+      rupiah = "max";
+    } else {
+      rupiah = rupiah.replace("Rp", "");
+      rupiah = rupiah.split(",").join("");
+      rupiah = rupiah.replace(".", "");
+      rupiah = Number(rupiah);
+    }
 
     const self = this;
     const choosenMobil = this.state.choosenMobil;
@@ -244,7 +250,7 @@ export default class MobilRequest extends Component {
                         type="button"
                         className="btn btn-warning btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("Peminjaman maksimal");
+                          $(".ekspetasiPinjaman").val("Pencairan maksimal");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                         }}
                       >
