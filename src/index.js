@@ -13,8 +13,8 @@ if (server === "http://localhost:3000/") {
   axios.defaults.baseURL = "https://api.mybpkb.com/";
 }
 
-axios.defaults.baseURL = "http://127.0.0.1:3333/";
-// axios.defaults.baseURL = "https://api.mybpkb.com/";
+// axios.defaults.baseURL = "http://127.0.0.1:3333/";
+axios.defaults.baseURL = "https://api.mybpkb.com/";
 
 axios.defaults.withCredentials = true;
 
