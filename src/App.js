@@ -1,10 +1,16 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, {
+  Component
+} from "../../../Library/Caches/typescript/2.9/node_modules/@types/react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from "../../../Library/Caches/typescript/2.9/node_modules/@types/react-router-dom";
 
 import Header from "./components/Header";
 
 import Home from "./pages/Home";
-import MobilRequest from "./pages/MobilRequest";
+import Mobil from "./pages/Mobil";
 import Motor from "./pages/Motor";
 import Contact from "./pages/Contact";
 
@@ -22,7 +28,7 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/simulasi/mobil" component={MobilRequest} />
+            <Route exact path="/simulasi/mobil" component={Mobil} />
             <Route exact path="/simulasi/motor" component={Motor} />
             <Route exact path="/contact" component={Contact} />
             <Route render={() => <p>Not Found</p>} />

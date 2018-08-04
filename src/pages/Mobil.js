@@ -220,7 +220,7 @@ export default class MobilRequest extends Component {
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("30000000");
+                          $(".ekspetasiPinjaman").val("Rp30,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                         }}
                       >
@@ -230,7 +230,7 @@ export default class MobilRequest extends Component {
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("50000000");
+                          $(".ekspetasiPinjaman").val("Rp50,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                         }}
                       >
@@ -240,7 +240,7 @@ export default class MobilRequest extends Component {
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("100000000");
+                          $(".ekspetasiPinjaman").val("Rp1000,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                         }}
                       >

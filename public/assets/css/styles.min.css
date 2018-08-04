@@ -133,6 +133,7 @@
 .button-pilihan-harga {
   /* margin-left: 10px; */
   margin-right: 5px;
+  margin-top: 5px;
 }
 
 @media (max-width: 767px) {

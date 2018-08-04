@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "../../../../Library/Caches/typescript/2.9/node_modules/@types/react";
+import { Link } from "../../../../Library/Caches/typescript/2.9/node_modules/@types/react-router-dom";
 
 export default class Header extends Component {
   render() {
