@@ -58,7 +58,7 @@ export default class MobilRequest extends Component {
     // rupiah means ekspetasi pinjaman, but it depens, if it max request it should be not rupiah
     let rupiah = event.target.ekspetasiPinjaman.value;
 
-    if ((rupiah = "Pencairan maksimal")) {
+    if (rupiah === "Pencairan maksimal") {
       rupiah = "max";
     } else {
       rupiah = rupiah.replace("Rp", "");
@@ -98,8 +98,6 @@ export default class MobilRequest extends Component {
       );
     });
   };
-
-  buttonHarga = () => {};
 
   // future function for dynamic search and fetch mobil
   fetchKendaraan = event => {
