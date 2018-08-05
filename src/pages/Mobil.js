@@ -101,7 +101,8 @@ export default class MobilRequest extends Component {
         );
       })
       .catch(error => {
-        alert("Pastikan semua field terisi");
+        const errorMessage = error.response.data[0];
+        alert(errorMessage.message);
       });
   };
 
