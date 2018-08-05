@@ -12,6 +12,7 @@ export default class MobilRequest extends Component {
     super(props);
     this.state = {
       allMobil: [],
+      allKota: [],
       choosenMobil: null,
       hasilSimulasi: []
     };
@@ -22,19 +23,18 @@ export default class MobilRequest extends Component {
     $(".isi-manual").hide();
 
     const self = this;
+
     axios.get("api/mobil").then(response => {
       self.setState({
         allMobil: response.data
       });
     });
-  };
 
   autoCompleteMobil = () => {
     const self = this;
-    let listKendaraan = this.state.allMobil;
 
-    let options = {
-      data: listKendaraan,
+    const options = {
+      data: self.state.allMobil,
       getValue: "nama",
       list: {
         maxNumberOfElements: 10,
@@ -52,6 +52,19 @@ export default class MobilRequest extends Component {
 
     $("#input-mobil").easyAutocomplete(options);
   };
+
+  // autoCompleteKota = () => {
+  //   const self = this;
+  //   const options = {
+  //     data: self.state.allKota,
+  //     list: {
+  //       match: {
+  //         enabled: true
+  //       }
+  //     }
+  //   };
+  //   $("#input-kota").easyAutocomplete(options);
+  // };
 
   submitButton = event => {
     event.preventDefault();
@@ -113,6 +126,7 @@ export default class MobilRequest extends Component {
 
   render() {
     this.autoCompleteMobil();
+    // this.autoCompleteKota();
     const hasilSimulasi = this.state.hasilSimulasi;
 
     return (
@@ -192,6 +206,8 @@ export default class MobilRequest extends Component {
                       className="form-control active-input"
                       type="text"
                       name="kota"
+                      id="input-kota"
+                      autoComplete="off"
                       placeholder="Contoh: Jakarta"
                       required=""
                     />
