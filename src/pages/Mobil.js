@@ -29,6 +29,7 @@ export default class MobilRequest extends Component {
         allMobil: response.data
       });
     });
+  };
 
   autoCompleteMobil = () => {
     const self = this;
@@ -53,18 +54,18 @@ export default class MobilRequest extends Component {
     $("#input-mobil").easyAutocomplete(options);
   };
 
-  // autoCompleteKota = () => {
-  //   const self = this;
-  //   const options = {
-  //     data: self.state.allKota,
-  //     list: {
-  //       match: {
-  //         enabled: true
-  //       }
-  //     }
-  //   };
-  //   $("#input-kota").easyAutocomplete(options);
-  // };
+  autoCompleteKota = () => {
+    // const self = this;
+    // const options = {
+    //   data: self.state.allKota,
+    //   list: {
+    //     match: {
+    //       enabled: true
+    //     }
+    //   }
+    // };
+    // $("#input-kota").easyAutocomplete(options);
+  };
 
   submitButton = event => {
     event.preventDefault();
@@ -126,9 +127,7 @@ export default class MobilRequest extends Component {
 
   render() {
     this.autoCompleteMobil();
-    // this.autoCompleteKota();
     const hasilSimulasi = this.state.hasilSimulasi;
-
     return (
       <section>
         <div
