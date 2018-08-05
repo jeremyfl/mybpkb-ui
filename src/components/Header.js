@@ -8,7 +8,7 @@ export default class Header extends Component {
         <nav className="navbar navbar-dark navbar-expand-md bg-primary">
           <div className="container-fluid">
             <Link to="/" className="navbar-brand">
-              MyBPKB Simulasi
+              Simulasi Gratis MyBPKB
             </Link>
 
             <button
