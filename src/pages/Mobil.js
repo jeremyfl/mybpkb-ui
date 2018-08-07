@@ -24,9 +24,15 @@ export default class MobilRequest extends Component {
 
     const self = this;
 
-    axios.get("api/mobil").then(response => {
+    axios.get("mobil").then(response => {
       self.setState({
         allMobil: response.data
+      });
+    });
+
+    axios.get("simulasi/kota").then(response => {
+      self.setState({
+        allKota: response.data
       });
     });
   };
@@ -55,16 +61,18 @@ export default class MobilRequest extends Component {
   };
 
   autoCompleteKota = () => {
-    // const self = this;
-    // const options = {
-    //   data: self.state.allKota,
-    //   list: {
-    //     match: {
-    //       enabled: true
-    //     }
-    //   }
-    // };
-    // $("#input-kota").easyAutocomplete(options);
+    const self = this;
+    const options = {
+      data: self.state.allKota,
+      getValue: "nama",
+      list: {
+        match: {
+          enabled: true
+        }
+      }
+    };
+
+    $("#input-kota").easyAutocomplete(options);
   };
 
   submitButton = event => {
@@ -97,7 +105,7 @@ export default class MobilRequest extends Component {
     };
 
     axios
-      .post("api/mobil/simulasi", request)
+      .post("simulasi/mobil", request)
       .then(response => {
         self.setState({
           hasilSimulasi: response.data
@@ -127,6 +135,7 @@ export default class MobilRequest extends Component {
 
   render() {
     this.autoCompleteMobil();
+    this.autoCompleteKota();
     const hasilSimulasi = this.state.hasilSimulasi;
     return (
       <section>

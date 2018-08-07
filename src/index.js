@@ -6,9 +6,14 @@ import registerServiceWorker from "./registerServiceWorker";
 import axios from "axios";
 
 // define base url for every endpoint
-// const server = window.location.host;
-// axios.defaults.baseURL = "http://127.0.0.1:3333/";
-axios.defaults.baseURL = "https://api.mybpkb.com/";
+const server = window.location.host;
+
+if (server === "127.0.0.1:3334" || server === "localhost:3334") {
+  axios.defaults.baseURL = "http://127.0.0.1:3333/api/";
+} else {
+  axios.defaults.baseURL = "https://api.mybpkb.com/api/";
+}
+
 axios.defaults.withCredentials = true;
 
 ReactDOM.render(<App />, document.getElementById("root"));
