@@ -9,9 +9,9 @@ import axios from "axios";
 const server = window.location.host;
 
 if (server === "127.0.0.1:3334" || server === "localhost:3334") {
-  axios.defaults.baseURL = "http://127.0.0.1:3333/api/";
+  axios.defaults.baseURL = "http://127.0.0.1:3333/";
 } else {
-  axios.defaults.baseURL = "https://api.mybpkb.com/api/";
+  axios.defaults.baseURL = "https://api.mybpkb.com/";
 }
 
 axios.defaults.withCredentials = true;

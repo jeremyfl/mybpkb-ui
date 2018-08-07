@@ -30,7 +30,7 @@ export default class MobilRequest extends Component {
       });
     });
 
-    axios.get("simulasi/kota").then(response => {
+    axios.get("kota").then(response => {
       self.setState({
         allKota: response.data
       });
