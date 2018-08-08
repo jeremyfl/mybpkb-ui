@@ -176,6 +176,19 @@ export default class MobilRequest extends Component {
                     />
                   </div>
                   <div className="form-group">
+                    <label>Nomor HP</label>
+                    <input
+                      className="form-control active-input"
+                      type="number"
+                      name="no_tlp"
+                      required=""
+                      placeholder="Contoh: 081288788836"
+                    />
+                    <small className="form-text text-muted">
+                      WhatsApp / SMS yang bisa dihubungi
+                    </small>
+                  </div>
+                  <div className="form-group">
                     <label>Email</label>
                     <input
                       className="form-control active-input"
@@ -184,19 +197,6 @@ export default class MobilRequest extends Component {
                       placeholder="Contoh: john@gmail.com"
                       required
                     />
-                  </div>
-                  <div className="form-group">
-                    <label>Nomor HP</label>
-                    <input
-                      className="form-control active-input"
-                      type="number"
-                      name="no_tlp"
-                      required=""
-                      placeholder="Contoh: 083897613570"
-                    />
-                    <small className="form-text text-muted">
-                      WhatsApp / SMS yang bisa dihubungi
-                    </small>
                   </div>
                   <div className="form-group">
                     <label>Alamat</label>
@@ -225,14 +225,14 @@ export default class MobilRequest extends Component {
                     <input
                       className="form-control active-input"
                       type="text"
-                      placeholder="Contoh: HONDA ALL NEW JAZZ IVTEC RS 1.5 AT 2017"
+                      placeholder="Contoh: GRAND NEW INNOVA DIESEL G 2.5 AT 2013"
                       autoComplete="off"
                       id="input-mobil"
                       required=""
                     />
-                    <small className="form-text text-muted">
+                    {/* <small className="form-text text-muted">
                       Merk Jenis & Tahun Keluaran
-                    </small>
+                    </small> */}
                   </div>
                   <div className="form-group">
                     <label>Ekspetasi Nominal Pinjaman</label>
