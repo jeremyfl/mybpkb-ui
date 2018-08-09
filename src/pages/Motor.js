@@ -151,8 +151,8 @@ export default class Motor extends Component {
             <div className="intro">
               <h2 className="text-center">Simulasi Motor</h2>
               <p className="lead text-center">
-                Kredit Tanpa Agunan WOM Finance
-              </p>
+Pinjaman Jaminan BPKB Motor Wom Finance              
+</p>
             </div>
           </div>
         </div>
