@@ -249,34 +249,34 @@ export default class Motor extends Component {
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp30,000,000");
+                          $(".ekspetasiPinjaman").val("Rp5,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                           $(".isi-manual").show();
                         }}
                       >
-                        30.000.000
+                        5.000.000
                       </button>
                       <button
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp50,000,000");
+                          $(".ekspetasiPinjaman").val("Rp7,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                           $(".isi-manual").show();
                         }}
                       >
-                        50.000.000
+                        7.000.000
                       </button>
                       <button
                         type="button"
                         className="btn btn-info btn-sm button-pilihan-harga"
                         onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp100,000,000");
+                          $(".ekspetasiPinjaman").val("Rp10,000,000");
                           $(".ekspetasiPinjaman").attr("disabled", true);
                           $(".isi-manual").show();
                         }}
                       >
-                        100.000.000
+                        10.000.000
                       </button>
                       <button
                         type="button"
@@ -312,9 +312,10 @@ export default class Motor extends Component {
                       required=""
                     >
                       <option value="">Pilih Tenor Pinjaman</option>
-                      <option value="12">1 Tahun</option>
-                      <option value="24">2 Tahun</option>
-                      <option value="36">3 Tahun</option>
+                      <option value="6">6 Bulan</option>
+                      <option value="11">11 Bulan</option>
+                      <option value="17">17 Bulan</option>
+                      <option value="23">23 Bulan</option>
                     </select>
                   </div>
                 </div>
