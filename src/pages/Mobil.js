@@ -11,9 +11,10 @@ export default class MobilRequest extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      allMobil: [],
+      allMotor: [],
       allKota: [],
-      choosenMobil: null,
+      choosenMotor: null,
+      choosenKota: null,
       hasilSimulasi: []
     };
   }
@@ -68,6 +69,12 @@ export default class MobilRequest extends Component {
       list: {
         match: {
           enabled: true
+        },
+        onClickEvent: () => {
+          let index = $("#input-kota").getSelectedItemData().id;
+          self.setState({
+            choosenKota: index
+          });
         }
       }
     };

@@ -14,6 +14,7 @@ export default class Motor extends Component {
       allMotor: [],
       allKota: [],
       choosenMotor: null,
+      choosenKota: null,
       hasilSimulasi: []
     };
   }
@@ -68,6 +69,12 @@ export default class Motor extends Component {
       list: {
         match: {
           enabled: true
+        },
+        onClickEvent: () => {
+          let index = $("#input-kota").getSelectedItemData().id;
+          self.setState({
+            choosenKota: index
+          });
         }
       }
     };
@@ -92,6 +99,7 @@ export default class Motor extends Component {
 
     const self = this;
     const choosenMotor = this.state.choosenMotor;
+    const choosenKota = this.state.choosenKota;
 
     const request = {
       id: choosenMotor,
@@ -99,7 +107,7 @@ export default class Motor extends Component {
       no_tlp: event.target.no_tlp.value,
       email: event.target.email.value,
       alamat: event.target.alamat.value,
-      kota: event.target.kota.value,
+      kota: choosenKota,
       pinjaman: rupiah,
       tenor: event.target.tenorPinjaman.value
     };
@@ -151,8 +159,8 @@ export default class Motor extends Component {
             <div className="intro">
               <h2 className="text-center">Simulasi Motor</h2>
               <p className="lead text-center">
-Pinjaman Jaminan BPKB Motor Wom Finance              
-</p>
+                Pinjaman Jaminan BPKB Motor Wom Finance
+              </p>
             </div>
           </div>
         </div>
