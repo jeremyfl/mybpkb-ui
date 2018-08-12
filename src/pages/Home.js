@@ -24,8 +24,8 @@ export default class Home extends Component {
         </div>
         <div className="container" style={{ paddingBottom: "50px" }}>
           <div style={{ marginTop: 40, marginBottom: 40 }}>
-            <h3 className="text-center">Hi!, Silahkan Pilih Kendaraan</h3>
-            <p className="text-center">Yang Ingin Anda Anggunkan</p>
+            <h3 className="text-center">Silahkan Pilih Kendaraan Anda</h3>
+            <p className="text-center">Kendaraan Ingin Anda Anggunkan</p>
           </div>
 
           <div id="mobile" className="d-md-none">
@@ -50,7 +50,7 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div id="desktop" className="d-none d-lg-block d-sm-none">
+          <div id="desktop" className="d-none d-md-block d-sm-none">
             <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
               <div className="card-body">
                 <div className="row">
