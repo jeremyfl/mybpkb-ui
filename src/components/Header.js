@@ -31,7 +31,11 @@ export default class Header extends Component {
                     Simulasi Motor
                   </Link>
                 </li>
-
+                <li className="nav-item" role="presentation">
+                  <Link className="nav-link active" to="/faq">
+                    FAQ
+                  </Link>
+                </li>
                 <li className="nav-item" role="presentation">
                   <Link className="nav-link active" to="/contact">
                     Contact

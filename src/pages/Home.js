@@ -228,7 +228,12 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-lg-7">
-                    <h3 className="text-left">Mengapa Kami?</h3>
+                    <h3
+                      className="text-left"
+                      style={{ marginTop: 20, marginBottom: 20 }}
+                    >
+                      Mengapa Kami?
+                    </h3>
 
                     <p className="lead">
                       Kami merupakan divisi dari Wom Finance yang fokus pada

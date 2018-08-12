@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Mobil from "./pages/Mobil";
 import Motor from "./pages/Motor";
+import Pertanyaan from "./pages/Pertanyaan";
 import Contact from "./pages/Contact";
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/simulasi/mobil" component={Mobil} />
             <Route exact path="/simulasi/motor" component={Motor} />
+            <Route exact path="/faq" component={Pertanyaan} />
             <Route exact path="/contact" component={Contact} />
             <Route render={() => <p>Not Found</p>} />
           </Switch>

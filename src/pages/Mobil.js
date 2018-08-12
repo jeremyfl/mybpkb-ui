@@ -7,7 +7,7 @@ window.jQuery = $;
 window.$ = $;
 require("easy-autocomplete");
 
-export default class MobilRequest extends Component {
+export default class Mobil extends Component {
   constructor(props) {
     super(props);
     this.state = {
