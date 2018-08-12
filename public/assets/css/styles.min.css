@@ -54,13 +54,25 @@
 }
 .gedung-wom {
   background-image: linear-gradient(
-      rgba(30, 106, 221, 0.7),
+      rgba(30, 106, 221, 0.6),
       rgba(30, 106, 221, 0.7)
     ),
     url("https://image.ibb.co/e4xUZT/gedungwom.jpg");
   background-position: top center;
   background-size: cover;
 }
+
+/* Halaman FAQ */
+.office-wom {
+  background-image: linear-gradient(
+      rgba(30, 106, 221, 0.8),
+      rgba(30, 106, 221, 0.8)
+    ),
+    url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg");
+  background-position: top center;
+  background-size: cover;
+}
+
 .highlight-blue {
   color: #fff;
   background-color: #1e6add;

@@ -12,9 +12,9 @@ export default class Pertanyaan extends Component {
     return (
       <section>
         <div
-          className="highlight-blue"
+          className="highlight-blue office-wom"
           style={{
-            background: "#1e6add",
+            // background: "#1e6add",
             paddingTop: "100px",
             paddingBottom: "100px"
           }}
