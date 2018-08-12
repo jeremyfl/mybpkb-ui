@@ -63,6 +63,7 @@ export default class MobilRequest extends Component {
 
   autoCompleteKota = () => {
     const self = this;
+
     const options = {
       data: self.state.allKota,
       getValue: "nama",
@@ -72,6 +73,8 @@ export default class MobilRequest extends Component {
         },
         onClickEvent: () => {
           let index = $("#input-kota").getSelectedItemData().id;
+
+          console.log(index);
           self.setState({
             choosenKota: index
           });
