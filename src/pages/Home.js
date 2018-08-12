@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
   render() {
@@ -30,21 +31,21 @@ export default class Home extends Component {
           <div id="mobile" className="d-md-none">
             <div className="card">
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">
+                <Link className="list-group-item" to="/simulasi/mobil">
                   <i className="fas fa-car" style={{ marginRight: 10 }} />
                   Gadai Mobil
-                </li>
-                <li className="list-group-item">
+                </Link>
+                <Link className="list-group-item" to="/simulasi/motor">
                   <i
                     className="fas fa-motorcycle"
                     style={{ marginRight: 10 }}
                   />
-                  Gadai Motor
-                </li>
-                <li className="list-group-item disabled">
+                  Gadai Mobil
+                </Link>
+                <Link className="list-group-item disabled" to="/simulasi/truck">
                   <i className="fas fa-truck" style={{ marginRight: 10 }} />
                   Gadai Truck
-                </li>
+                </Link>
               </ul>
             </div>
           </div>
@@ -70,9 +71,12 @@ export default class Home extends Component {
                     </h6>
                   </div>
                   <div className="col-md-3">
-                    <a href="#" className="btn btn-success btn-block">
+                    <Link
+                      to="/simulasi/motor"
+                      className="btn btn-success btn-block"
+                    >
                       Hitung
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -98,9 +102,12 @@ export default class Home extends Component {
                     </h6>
                   </div>
                   <div className="col-md-3">
-                    <a href="#" className="btn btn-success btn-block">
+                    <Link
+                      to="/simulasi/motor"
+                      className="btn btn-success btn-block"
+                    >
                       Hitung
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
