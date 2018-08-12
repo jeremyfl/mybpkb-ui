@@ -99,6 +99,7 @@ export default class MobilRequest extends Component {
 
     const self = this;
     const choosenMobil = this.state.choosenMobil;
+    const choosenKota = this.state.choosenKota;
 
     const request = {
       id: choosenMobil,
