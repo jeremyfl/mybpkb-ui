@@ -117,17 +117,15 @@
   background: 0 0;
   transition: background-color 0.25s;
 }
-.simple-slider .swiper-slide {
-  height: 500px;
-  background-repeat: no-repeat;
+
+.carousel-item {
+  height: 50vh;
+  min-height: 400px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
-}
-.simple-slider .swiper-button-next,
-.simple-slider .swiper-button-prev {
-  width: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .button-pilihan-harga {
@@ -136,34 +134,30 @@
   margin-top: 5px;
 }
 
-html {
-  font-size: 1rem;
+.card-formulir {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
+#faq,
+#pelajari {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 50px 0;
+  padding: 30px 0;
+  background: white;
 }
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
+.faq-title {
+  margin-top: 20px;
 }
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
+.faq-title a:link,
+.faq-title a:visited {
+  color: black;
 }
-
-@media (max-width: 767px) {
-  .simple-slider .swiper-button-next,
-  .simple-slider .swiper-button-prev {
-    display: none;
-  }
-  .simple-slider .swiper-slide {
-    height: 360px;
-  }
+.faq-title a:hover {
+  text-decoration: none;
 }

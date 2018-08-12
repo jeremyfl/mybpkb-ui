@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Mobil from "./pages/Mobil";
@@ -27,6 +28,7 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
             <Route render={() => <p>Not Found</p>} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     );

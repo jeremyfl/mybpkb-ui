@@ -170,7 +170,7 @@ export default class MobilRequest extends Component {
           style={{ marginTop: "-60px", paddingBottom: "50px" }}
         >
           <div className="col-lg-8 offset-lg-2">
-            <div className="card">
+            <div className="card card-formulir">
               <form onSubmit={this.submitButton}>
                 <div className="card-body">
                   <div className="form-group">
