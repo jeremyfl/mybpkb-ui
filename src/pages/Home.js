@@ -23,10 +23,8 @@ export default class Home extends Component {
         </div>
         <div className="container" style={{ paddingBottom: "50px" }}>
           <div style={{ marginTop: 40, marginBottom: 40 }}>
-            <h3 className="text-center">
-              Pilih Kendaraan Yang Ingin Anda Anggunkan
-            </h3>
-            <p className="text-center">Mobil, Motor & Truck</p>
+            <h3 className="text-center">Hi!, Silahkan Pilih Kendaraan</h3>
+            <p className="text-center">Yang Ingin Anda Anggunkan</p>
           </div>
 
           <div id="mobile" className="d-md-none">
