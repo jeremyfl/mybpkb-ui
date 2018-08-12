@@ -11,9 +11,9 @@ export default class MobilRequest extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      allMotor: [],
+      allMobil: [],
       allKota: [],
-      choosenMotor: null,
+      choosenMobil: null,
       choosenKota: null,
       hasilSimulasi: []
     };
@@ -63,7 +63,6 @@ export default class MobilRequest extends Component {
 
   autoCompleteKota = () => {
     const self = this;
-
     const options = {
       data: self.state.allKota,
       getValue: "nama",
@@ -73,8 +72,6 @@ export default class MobilRequest extends Component {
         },
         onClickEvent: () => {
           let index = $("#input-kota").getSelectedItemData().id;
-
-          console.log(index);
           self.setState({
             choosenKota: index
           });
