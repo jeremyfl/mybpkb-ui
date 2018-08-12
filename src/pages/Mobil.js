@@ -107,7 +107,7 @@ export default class MobilRequest extends Component {
       no_tlp: event.target.no_tlp.value,
       email: event.target.email.value,
       alamat: event.target.alamat.value,
-      kota: event.target.kota.value,
+      kota: choosenKota,
       pinjaman: rupiah,
       tenor: event.target.tenorPinjaman.value
     };
