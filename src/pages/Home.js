@@ -29,57 +29,81 @@ export default class Home extends Component {
             <p className="text-center">Mobil, Motor & Truck</p>
           </div>
 
-          <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
-            <div className="card-body">
-              <div className="row">
-                <div className="col-md-1">
+          <div id="mobile" className="d-md-none">
+            <div className="card">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">
+                  <i className="fas fa-car" style={{ marginRight: 10 }} />
+                  Gadai Mobil
+                </li>
+                <li className="list-group-item">
                   <i
-                    className="fas fa-car"
-                    style={{
-                      fontSize: 50,
-                      textAlign: "center",
-                      display: "block"
-                    }}
+                    className="fas fa-motorcycle"
+                    style={{ marginRight: 10 }}
                   />
-                </div>
-                <div className="col-md-8">
-                  <h5 className="card-title">Simulasi Kendaraan Mobil</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">
-                    Range bunga 10.8% sd 12.5% pertahun
-                  </h6>
-                </div>
-                <div className="col-md-3">
-                  <a href="#" className="btn btn-success btn-block">
-                    Hitung
-                  </a>
-                </div>
-              </div>
+                  Gadai Motor
+                </li>
+                <li className="list-group-item disabled">
+                  <i className="fas fa-truck" style={{ marginRight: 10 }} />
+                  Gadai Truck
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
-            <div className="card-body">
-              <div className="row">
-                <div className="col-md-1">
-                  <i
-                    className="fas fa-motorcycle"
-                    style={{
-                      fontSize: 50,
-                      textAlign: "center",
-                      display: "block"
-                    }}
-                  />
+          <div id="desktop" className="d-none d-lg-block d-sm-none">
+            <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-md-1">
+                    <i
+                      className="fas fa-car"
+                      style={{
+                        fontSize: 50,
+                        textAlign: "center",
+                        display: "block"
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <h5 className="card-title">Simulasi Kendaraan Mobil</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                      Range bunga 10.8% sd 12.5% pertahun
+                    </h6>
+                  </div>
+                  <div className="col-md-3">
+                    <a href="#" className="btn btn-success btn-block">
+                      Hitung
+                    </a>
+                  </div>
                 </div>
-                <div className="col-md-8">
-                  <h5 className="card-title">Simulasi Kendaraan Motor</h5>
-                  <h6 className="card-subtitle mb-2 text-muted">
-                    Range bunga 10.8% sd 12.5% pertahun
-                  </h6>
-                </div>
-                <div className="col-md-3">
-                  <a href="#" className="btn btn-success btn-block">
-                    Hitung
-                  </a>
+              </div>
+            </div>
+
+            <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-md-1">
+                    <i
+                      className="fas fa-motorcycle"
+                      style={{
+                        fontSize: 50,
+                        textAlign: "center",
+                        display: "block"
+                      }}
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <h5 className="card-title">Simulasi Kendaraan Motor</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">
+                      Range bunga 10.8% sd 12.5% pertahun
+                    </h6>
+                  </div>
+                  <div className="col-md-3">
+                    <a href="#" className="btn btn-success btn-block">
+                      Hitung
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
