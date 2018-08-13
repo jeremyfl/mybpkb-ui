@@ -26,7 +26,7 @@ export default class Home extends Component {
                 className="carousel-item active"
                 style={{
                   backgroundImage:
-                    'url("https://www.mybpkb.com/wp-content/uploads/2018/03/banner-13-maret.png")'
+                    'url("https://image.ibb.co/e4xUZT/gedungwom.jpg")'
                 }}
               >
                 {/* <div className="carousel-caption d-none d-md-block">
@@ -217,7 +217,7 @@ export default class Home extends Component {
                   <div className="col-lg-5">
                     <div class="text-center">
                       <img
-                        src="https://mybpkb-landing.surge.sh/images/new/Point%203.png"
+                        src="https://www.mybpkb.com/images/new/Point%203.png"
                         alt=""
                         // className=""
                         style={{
@@ -253,7 +253,7 @@ export default class Home extends Component {
                         window.location.href = "https://www.mybpkb.com";
                       }}
                       type="button"
-                      class="btn btn-outline-info btn-lg"
+                      class="btn btn-info btn-lg"
                     >
                       Pelajari
                     </button>

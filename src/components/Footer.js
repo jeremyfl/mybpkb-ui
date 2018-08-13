@@ -7,8 +7,6 @@ export default class Footer extends Component {
         class="footer"
         style={{
           background: "#fff",
-          paddingTop: 15,
-          paddingBottom: 15,
           borderTop: "1px solid rgba(0, 0, 0, 0.125)",
           borderBottom: "1px solid rgba(0, 0, 0, 0.125)"
         }}
