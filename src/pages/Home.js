@@ -5,88 +5,13 @@ export default class Home extends Component {
   render() {
     return (
       <section>
-        <header>
-          <div
-            id="carouselExampleIndicators"
-            className="carousel slide"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to={0}
-                className="active"
-              />
-              <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-              <li data-target="#carouselExampleIndicators" data-slide-to={2} />
-            </ol>
-            <div className="carousel-inner" role="listbox">
-              {/* Slide One - Set the background image for this slide in the line below */}
-              <div
-                className="carousel-item active"
-                style={{
-                  backgroundImage:
-                    'url("https://image.ibb.co/e4xUZT/gedungwom.jpg")'
-                }}
-              >
-                {/* <div className="carousel-caption d-none d-md-block">
-                  <h3>First Slide</h3>
-                  <p>This is a description for the first slide.</p>
-                </div> */}
-              </div>
-              {/* Slide Two - Set the background image for this slide in the line below */}
-              <div
-                className="carousel-item"
-                style={{
-                  backgroundImage:
-                    'url("https://image.ibb.co/e4xUZT/gedungwom.jpg")'
-                }}
-              >
-                {/* <div className="carousel-caption d-none d-md-block">
-                  <h3>Second Slide</h3>
-                  <p>This is a description for the second slide.</p>
-                </div> */}
-              </div>
-              {/* Slide Three - Set the background image for this slide in the line below */}
-              <div
-                className="carousel-item"
-                style={{
-                  backgroundImage:
-                    'url("https://www.wom.co.id/upload-iklan/e803b1304d3c58cc279b9f42ef7cc43b2c871f2d.jpg")'
-                }}
-              >
-                {/* <div className="carousel-caption d-none d-md-block">
-                  <h3>Third Slide</h3>
-                  <p>This is a description for the third slide.</p>
-                </div> */}
-              </div>
-            </div>
-            <a
-              className="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="sr-only">Next</span>
-            </a>
-          </div>
-        </header>
-
         <div>
           <div className="container" id="pilih-simulasi">
             <div style={{ marginTop: 40, marginBottom: 40 }}>
-              <h3 className="text-center">Silahkan Pilih Kendaraan Anda</h3>
-              <p className="text-center">Kendaraan Ingin Anda Anggunkan</p>
+              <h3 className="text-center">Pilih Kendaraan Anda</h3>
+              <p className="text-center">
+                Pilih Jenis Kendaraan Yang Ingin Anda Anggunkan
+              </p>
             </div>
 
             <div id="mobile" className="d-md-none">
@@ -94,21 +19,21 @@ export default class Home extends Component {
                 <ul className="list-group list-group-flush">
                   <Link className="list-group-item" to="/simulasi/mobil">
                     <i className="fas fa-car" style={{ marginRight: 10 }} />
-                    Gadai Mobil
+                    Gadai BPKB Mobil
                   </Link>
                   <Link className="list-group-item" to="/simulasi/motor">
                     <i
                       className="fas fa-motorcycle"
                       style={{ marginRight: 10 }}
                     />
-                    Gadai Motor
+                    Gadai BPKB Motor
                   </Link>
                   <Link
                     className="list-group-item disabled"
                     to="/simulasi/truck"
                   >
                     <i className="fas fa-truck" style={{ marginRight: 10 }} />
-                    Gadai Truck
+                    Gadai BPKB Truck
                   </Link>
                 </ul>
               </div>

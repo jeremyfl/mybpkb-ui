@@ -22,6 +22,11 @@ export default class Header extends Component {
             <div className="collapse navbar-collapse" id="navcol-1">
               <ul className="nav navbar-nav">
                 <li className="nav-item" role="presentation">
+                  <a className="nav-link active" href="https:/www.mybpkb.com">
+                    Pelajari MyBPKB
+                  </a>
+                </li>
+                <li className="nav-item" role="presentation">
                   <Link className="nav-link active" to="/simulasi/mobil">
                     Simulasi Mobil
                   </Link>
