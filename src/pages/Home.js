@@ -83,7 +83,7 @@ export default class Home extends Component {
         </header>
 
         <div>
-          <div className="container">
+          <div className="container" id="pilih-simulasi">
             <div style={{ marginTop: 40, marginBottom: 40 }}>
               <h3 className="text-center">Silahkan Pilih Kendaraan Anda</h3>
               <p className="text-center">Kendaraan Ingin Anda Anggunkan</p>
@@ -136,7 +136,7 @@ export default class Home extends Component {
                     </div>
                     <div className="col-md-3">
                       <Link
-                        to="/simulasi/motor"
+                        to="/simulasi/mobil"
                         className="btn btn-success btn-block"
                       >
                         Hitung
@@ -162,7 +162,7 @@ export default class Home extends Component {
                     <div className="col-md-8">
                       <h5 className="card-title">Simulasi Kendaraan Motor</h5>
                       <h6 className="card-subtitle mb-2 text-muted">
-                        Range bunga 10.8% sd 12.5% pertahun
+                        Range bunga 1.9% sd 21.09% pertahun
                       </h6>
                     </div>
                     <div className="col-md-3">
@@ -248,8 +248,14 @@ export default class Home extends Component {
                       lainnya.
                     </p>
 
-                    <button type="button" class="btn btn-outline-info btn-lg">
-                      Lihat Persyaratan
+                    <button
+                      onClick={() => {
+                        window.location.href = "https://www.mybpkb.com";
+                      }}
+                      type="button"
+                      class="btn btn-outline-info btn-lg"
+                    >
+                      Pelajari
                     </button>
                   </div>
                 </div>

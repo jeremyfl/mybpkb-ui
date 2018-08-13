@@ -1,11 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
-import $ from "jquery";
-import CurrencyFormat from "react-currency-format";
-
-window.jQuery = $;
-window.$ = $;
-require("easy-autocomplete");
 
 export default class Pertanyaan extends Component {
   render() {
