@@ -325,6 +325,23 @@ export default class Mobil extends Component {
                       <option value="36">3 Tahun</option>
                     </select>
                   </div>
+
+                  {/* <div class="alert alert-info" role="alert">
+                    <strong>Info</strong>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="alert"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ul>
+                      <li>Bunga 1.9% perbulan / 21.09% pertahun</li>
+                      <li>Administrasi Rp625.000 - Rp.675.000 </li>
+                      <li>Asuransi 2.5% - 4.5% </li>
+                    </ul>
+                  </div> */}
                 </div>
                 <div className="card-footer">
                   <button
