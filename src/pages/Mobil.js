@@ -326,7 +326,7 @@ export default class Mobil extends Component {
                     </select>
                   </div>
 
-                  {/* <div class="alert alert-info" role="alert">
+                  <div class="alert alert-info" role="alert">
                     <strong>Info</strong>
                     <button
                       type="button"
@@ -337,11 +337,16 @@ export default class Mobil extends Component {
                       <span aria-hidden="true">&times;</span>
                     </button>
                     <ul>
-                      <li>Bunga 1.9% perbulan / 21.09% pertahun</li>
-                      <li>Administrasi Rp625.000 - Rp.675.000 </li>
-                      <li>Asuransi 2.5% - 4.5% </li>
+                      <li>Bunga 10.8% sd 12.5%</li>
+                      <li>
+                        Biaya administrasi 1.700.000 sd 3.000.000 tergantung
+                        jumlah pinjaman.
+                      </li>
+                      <li>
+                        Biaya asuransi 0.75% per tahun dari harga otr kendaraan.
+                      </li>
                     </ul>
-                  </div> */}
+                  </div>
                 </div>
                 <div className="card-footer">
                   <button

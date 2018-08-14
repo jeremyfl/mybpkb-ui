@@ -338,7 +338,7 @@ export default class Motor extends Component {
                       <span aria-hidden="true">&times;</span>
                     </button>
                     <ul>
-                      <li>Bunga 1.9% perbulan / 21.09% pertahun</li>
+                      <li>Bunga 1.9% perbulan sd 21.09% pertahun</li>
                       <li>Administrasi Rp625.000 - Rp.675.000 </li>
                       <li>Asuransi 2.5% - 4.5% </li>
                     </ul>
