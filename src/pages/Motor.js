@@ -398,6 +398,11 @@ export default class Motor extends Component {
                       </tr>
                     </tbody>
                   </table>
+
+                  <div class="alert alert-info" role="alert">
+                    <strong>Silahkan lihat persyaratannya </strong>
+                    <a href="//www.mybpkb.com/index.html#persyaratan">Disini</a>
+                  </div>
                 </div>
               </div>
             </div>
