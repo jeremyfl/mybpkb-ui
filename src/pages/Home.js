@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import like from "../images/like.svg";
 
 export default class Home extends Component {
   render() {
@@ -10,7 +11,8 @@ export default class Home extends Component {
             <div style={{ marginTop: 40, marginBottom: 40 }}>
               <h3 className="text-center">Pilih Kendaraan Anda</h3>
               <p className="text-center">
-                Pilih Jenis Kendaraan Yang Ingin Anda Anggunkan
+                Hi!, Silahkan Pilih Jenis Kendaraan Yang Ingin Anda Anggunkan
+                Dibawah
               </p>
             </div>
 
@@ -142,12 +144,12 @@ export default class Home extends Component {
                   <div className="col-lg-5">
                     <div class="text-center">
                       <img
-                        src="https://www.mybpkb.com/images/new/Point%203.png"
+                        src={like}
                         alt=""
                         // className=""
                         style={{
-                          width: 300,
-                          height: 300
+                          width: 200,
+                          height: 200
                         }}
                       />
                     </div>

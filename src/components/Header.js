@@ -22,7 +22,12 @@ export default class Header extends Component {
             <div className="collapse navbar-collapse" id="navcol-1">
               <ul className="nav navbar-nav">
                 <li className="nav-item" role="presentation">
-                  <a className="nav-link active" href="https:/www.mybpkb.com">
+                  <a
+                    className="nav-link active"
+                    onClick={() => {
+                      window.location.href = "https://www.mybpkb.com";
+                    }}
+                  >
                     Pelajari MyBPKB
                   </a>
                 </li>
