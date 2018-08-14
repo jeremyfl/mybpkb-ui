@@ -130,16 +130,6 @@
   transition: background-color 0.25s;
 }
 
-.carousel-item {
-  height: 50vh;
-  min-height: 400px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .button-pilihan-harga {
   /* margin-left: 10px; */
   margin-right: 5px;
