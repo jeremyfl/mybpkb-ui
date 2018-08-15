@@ -57,10 +57,10 @@ export default class Home extends Component {
         </header>
         <div className="container" id="pilih-simulasi">
           <div style={{ marginTop: 40, marginBottom: 40 }}>
-            <h3 className="text-center">Pilih Kendaraan Anda</h3>
+            <h3 className="text-center">Simulasikan Kendaraan Anda</h3>
             <p className="text-center">
-              Hi!, Silahkan Pilih Jenis Kendaraan Yang Ingin Anda Anggunkan
-              Dibawah
+              Anda akan mendapatkan total pencairan, angsuran, dan lama tenor
+              yang bisa anda pilih.
             </p>
           </div>
 
@@ -69,14 +69,14 @@ export default class Home extends Component {
               <ul className="list-group list-group-flush">
                 <Link className="list-group-item" to="/simulasi/mobil">
                   <i className="fas fa-car" style={{ marginRight: 10 }} />
-                  Gadai BPKB Mobil
+                  Simulasi Gadai BPKB Mobil
                 </Link>
                 <Link className="list-group-item" to="/simulasi/motor">
                   <i
                     className="fas fa-motorcycle"
                     style={{ marginRight: 10 }}
                   />
-                  Gadai BPKB Motor
+                  Simulasi Gadai BPKB Motor
                 </Link>
                 <Link className="list-group-item disabled" to="/simulasi/truck">
                   <i className="fas fa-truck" style={{ marginRight: 10 }} />
@@ -185,7 +185,40 @@ export default class Home extends Component {
         <div id="pelajari">
           <div className="container">
             <div style={{ marginTop: 20, marginBottom: 20 }}>
-              <div className="row">
+              <div className="col-lg-6 offset-lg-3">
+                <div className="text-center">
+                  <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+                    Kami membantu para calon konsumen yang sedang membutuhkan
+                    dana tunai
+                  </h3>
+
+                  <p className="lead">
+                    Seperti untuk keperluan modal usaha, biaya Pendidikan,
+                    kesehatan, renovasi, dan kebutuhan mendesak lainnya.
+                  </p>
+
+                  {/* <button
+                    onClick={() => {
+                      window.location.href = "https://www.mybpkb.com";
+                    }}
+                    type="button"
+                    class="btn btn-info btn-block"
+                  >
+                    Pelajari
+                  </button> */}
+                  <img
+                    src={like}
+                    alt=""
+                    className="image-pelajari"
+                    style={{
+                      width: 200,
+                      height: 200
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* <div className="row">
                 <div className="col-lg-5">
                   <div class="text-center">
                     <img
@@ -200,37 +233,9 @@ export default class Home extends Component {
                   </div>
                 </div>
                 <div className="col-lg-7">
-                  <h3
-                    className="text-left"
-                    style={{ marginTop: 20, marginBottom: 20 }}
-                  >
-                    Mengapa Kami?
-                  </h3>
-
-                  <p className="lead">
-                    Kami merupakan divisi dari Wom Finance yang fokus pada
-                    pemasaran digital produk Pembiayaan Multiguna jaminan BPKB
-                    Mobil, Motor & Truck.
-                  </p>
-
-                  <p className="lead">
-                    Kami membantu para calon konsumen yang sedang membutuhkan
-                    dana tunai. Seperti untuk keperluan modal usaha, biaya
-                    Pendidikan, kesehatan, renovasi, dan kebutuhan mendesak
-                    lainnya.
-                  </p>
-
-                  <button
-                    onClick={() => {
-                      window.location.href = "https://www.mybpkb.com";
-                    }}
-                    type="button"
-                    class="btn btn-info btn-lg"
-                  >
-                    Pelajari
-                  </button>
+                 
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

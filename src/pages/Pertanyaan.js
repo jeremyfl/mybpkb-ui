@@ -101,15 +101,6 @@ export default class Pertanyaan extends Component {
                   </p>
                 </li>
                 <li className="list-group-item">
-                  <h5 className="card-title">
-                    Apakah tinggal di Apartemen bisa ?
-                  </h5>
-                  <p className="card-text">
-                    Untuk sementara jika tinggal di Apartemen tidak bisa,
-                    kecuali memiliki rumah tinggal lain selain Apartemen.
-                  </p>
-                </li>
-                <li className="list-group-item">
                   <h5 className="card-title">Apakah tinggal kontrak bisa ?</h5>
                   <p className="card-text">Bisa jika kontrak tahunan.</p>
                 </li>

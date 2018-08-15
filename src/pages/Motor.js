@@ -65,7 +65,7 @@ export default class Motor extends Component {
     const self = this;
     const options = {
       data: self.state.allKota,
-      getValue: "nama",
+      getValue: "name",
       list: {
         match: {
           enabled: true
@@ -349,9 +349,9 @@ export default class Motor extends Component {
                     type="submit"
                     name=""
                     id=""
-                    className="btn btn-primary btn-block"
+                    className="btn btn-warning btn-block"
                   >
-                    Hitung & Ajukan
+                    Hitung
                   </button>
                 </div>
               </form>
