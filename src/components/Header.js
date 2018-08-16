@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark navbar-expand-md bg-primary">
+        <nav className="navbar navbar-dark navbar-expand-md">
           <div className="container-fluid">
             <Link to="/" className="navbar-brand">
               Simulasi Gratis MyBPKB

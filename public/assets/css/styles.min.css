@@ -1,3 +1,6 @@
+nav {
+  background: #222e60;
+}
 .navbar-dark .navbar-toggler {
   border-color: transparent;
 }
@@ -54,8 +57,8 @@
 }
 .gedung-wom {
   background-image: linear-gradient(
-      rgba(30, 106, 221, 0.6),
-      rgba(30, 106, 221, 0.7)
+      rgba(34, 46, 96, 0.9),
+      rgba(34, 46, 96, 0.8)
     ),
     url("https://image.ibb.co/e4xUZT/gedungwom.jpg");
   background-position: top center;
@@ -65,8 +68,8 @@
 /* Halaman FAQ */
 .office-wom {
   background-image: linear-gradient(
-      rgba(30, 106, 221, 0.8),
-      rgba(30, 106, 221, 0.8)
+      rgba(34, 46, 96, 0.9),
+      rgba(34, 46, 96, 0.8)
     ),
     url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg");
   background-position: top center;
@@ -75,7 +78,7 @@
 
 .highlight-blue {
   color: #fff;
-  background-color: #1e6add;
+  background-color: #222e60;
   padding: 50px 0;
 }
 .highlight-blue p {
@@ -144,27 +147,54 @@
   background-clip: padding-box;
 }
 
-#faq,
+#pilih-simulasi {
+  margin: 20px 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
 #pelajari {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  margin: 50px 0;
-  padding: 30px 0;
+  margin: 20px 0;
+  padding-top: 30px;
+  /* padding: 30px 0; */
   background: white;
 }
 
-.faq-title {
-  margin-top: 20px;
+#persyaratan {
+  margin: 20px 0;
+  padding-top: 30px;
 }
-.faq-title a:link,
-.faq-title a:visited {
-  color: black;
-}
-.faq-title a:hover {
-  text-decoration: none;
+#persyaratan .ilustration {
+  margin: 50px 0;
 }
 
-.image-pelajari {
+#persyaratan img {
+  width: 90px;
+  height: 90px;
+  margin: 20px 0;
+}
+
+@media (max-width: 575.98px) {
+  #persyaratan .ilustration {
+    margin: 30px 0;
+  }
+  #persyaratan img {
+    width: 60px;
+    height: 60px;
+  }
+  #persyaratan h4 {
+    font-size: 19px;
+  }
+  #persyaratan h4 small {
+    font-size: 10px;
+  }
+}
+
+/* Carousel */
+#carouselExampleIndicators {
+  background: #222e60;
+  padding: 30px 0;
 }
 
 /* Sticky footer styles

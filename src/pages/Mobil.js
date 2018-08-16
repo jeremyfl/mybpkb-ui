@@ -336,8 +336,9 @@ export default class Mobil extends Component {
                     >
                       <span aria-hidden="true">&times;</span>
                     </button>
-                    <ul>
-                      <li>Bunga 10.8% sd 12.5%</li>
+                    <ul style={{ fontWeight: "bolder" }}>
+                      <li>Provisi 0%</li>
+                      <li>Bunga 10.8% sd 12.5% pertahun</li>
                       <li>
                         Biaya administrasi 1.700.000 sd 3.000.000 tergantung
                         jumlah pinjaman.
@@ -353,9 +354,9 @@ export default class Mobil extends Component {
                     type="submit"
                     name=""
                     id=""
-                    className="btn btn-warning btn-block"
+                    className="btn btn-warning btn-block btn-lg"
                   >
-                    Hitung
+                    <strong>Hitung</strong>
                   </button>
                 </div>
               </form>

@@ -150,7 +150,6 @@ export default class Motor extends Component {
         <div
           className="highlight-blue"
           style={{
-            background: "#1e6add",
             paddingTop: "100px",
             paddingBottom: "100px"
           }}
@@ -205,6 +204,9 @@ export default class Motor extends Component {
                       placeholder="Contoh: john@gmail.com"
                       required
                     />
+                    <small className="form-text text-muted">
+                      Dapatkan update terbaru mengenai promo, dsb
+                    </small>
                   </div>
                   <div className="form-group">
                     <label>Alamat</label>
@@ -227,6 +229,9 @@ export default class Motor extends Component {
                       placeholder="Contoh: Jakarta"
                       required=""
                     />
+                    <small className="form-text text-muted">
+                      Kami membutuhkannya untuk mencari kantor cabang terdekat
+                    </small>
                   </div>
                   <div className="form-group">
                     <label>Jenis Kendaraan</label>
@@ -325,6 +330,9 @@ export default class Motor extends Component {
                       <option value="17">17 Bulan</option>
                       <option value="23">23 Bulan</option>
                     </select>
+                    <small className="form-text text-muted">
+                      Tidak menemukan tenor yang cocok, silahkan kontak kami
+                    </small>
                   </div>
 
                   <div class="alert alert-info" role="alert">
