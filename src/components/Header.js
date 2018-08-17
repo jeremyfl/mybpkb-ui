@@ -89,7 +89,7 @@ export default class Header extends Component {
           <div className="float-right d-md-none">
             <button
               type="button"
-              class="btn btn-whatsapp"
+              class="btn btn-sm btn-whatsapp"
               data-toggle="modal"
               data-target="#exampleModal"
             >

@@ -64,7 +64,7 @@ export default class Home extends Component {
         <div id="pilih-simulasi">
           <div className="container">
             <div style={{ marginTop: 20, marginBottom: 20 }}>
-              <h3 className="text-center">Simulasikan Kendaraan Anda</h3>
+              <h2 className="text-center">Simulasikan Kendaraan Anda</h2>
               <p className="text-center">
                 Anda akan mendapatkan total pencairan, angsuran, dan lama tenor
                 yang bisa anda pilih.
@@ -202,10 +202,10 @@ export default class Home extends Component {
           <div className="container">
             <div className="col-lg-8 offset-lg-2">
               <div className="text-center">
-                <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+                <h2 style={{ marginTop: 20, marginBottom: 20 }}>
                   Kami membantu calon konsumen yang sedang membutuhkan dana
                   tunai
-                </h3>
+                </h2>
 
                 <p className="lead">
                   Seperti untuk keperluan modal usaha, biaya Pendidikan,
