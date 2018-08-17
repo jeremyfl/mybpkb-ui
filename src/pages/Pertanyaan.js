@@ -165,7 +165,6 @@ export default class Pertanyaan extends Component {
                   <h5 className="card-title">
                     Berapa minimal tahun kendaraan yang bisa dibiayai?
                   </h5>
-                  <h6 className="card-subtitle mb-2 text-muted">Mobilku</h6>
                   <p className="card-text">
                     Untuk motor minimal th 2008. Honda, yamaha, suzuki, kawasaki
                     dan vespa. Mobil minimal th 2003. Hampir semua merk mobil.
@@ -173,6 +172,28 @@ export default class Pertanyaan extends Component {
                   </p>
                   <p className="card-text">
                     Untuk mobil ex taksi atau limo belum bisa dibiayai.
+                  </p>
+                </li>
+                <li className="list-group-item">
+                  <h5 className="card-title">Berapa lama proses pencairan?</h5>
+                  <p className="card-text">
+                    Jika persyaratan sudah dipenuhi dan lengkap. Lama proses
+                    pencairan utk motor 30 menit tanpa survey. Dan 120 menit
+                    dengan survey. S&k berlaku.
+                  </p>
+                  <p className="card-text">
+                    Utk mobil jika persyaratan sudah dipenuhi dan lengkap,
+                    proses pencairan 1x24 jam (hari kerja)
+                  </p>
+                </li>
+                <li className="list-group-item">
+                  <h5 className="card-title">
+                    Apakah yg di jaminkan itu hanya Bpkb nya saja atau dengan
+                    kendaraannya?
+                  </h5>
+                  <p className="card-text">
+                    Yang dijaminkan hanya Bpkb nya saja. Kendaraannya tidak.
+                    Namun kendaraan wajib di hadirkan pada saat proses survey.
                   </p>
                 </li>
               </ul>

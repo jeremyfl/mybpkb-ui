@@ -26,7 +26,8 @@ export default class Mobil extends Component {
   componentDidMount = () => {
     window.scrollTo(0, 0);
     $("#hasilSimulasi").hide();
-    // $("#go-persyaratan").hide();
+    $("#go-persyaratan").hide();
+    $(".isi-manual").hide();
 
     const self = this;
 
@@ -250,7 +251,7 @@ export default class Mobil extends Component {
                     <small className="form-text text-muted">
                       Tidak menemukan kendaraan anda?, silahkan
                       <a href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku">
-                        kontak kami
+                        hubungi kami
                       </a>
                     </small>
                   </div>
@@ -339,7 +340,7 @@ export default class Mobil extends Component {
                     <small className="form-text text-muted">
                       Tidak menemukan tenor yang cocok, silahkan
                       <a href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku">
-                        kontak kami
+                        hubungi kami
                       </a>
                     </small>
                   </div>
