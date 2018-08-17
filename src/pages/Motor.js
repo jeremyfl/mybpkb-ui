@@ -1,12 +1,15 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import $ from "jquery";
 import CurrencyFormat from "react-currency-format";
 
+// image
+import asking from "./../images/asking.svg";
+
 window.jQuery = $;
 window.$ = $;
 require("easy-autocomplete");
-
 export default class Motor extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +23,9 @@ export default class Motor extends Component {
   }
 
   componentDidMount = () => {
+    window.scrollTo(0, 0);
     $("#hasilSimulasi").hide();
+    $("#go-persyaratan").hide();
     $(".isi-manual").hide();
 
     const self = this;
@@ -121,6 +126,7 @@ export default class Motor extends Component {
 
         // show table
         $("#hasilSimulasi").show();
+        $("#go-persyaratan").show();
 
         // scroll to table
         $("html, body").animate(
@@ -243,12 +249,15 @@ export default class Motor extends Component {
                       id="input-motor"
                       required=""
                     />
-                    {/* <small className="form-text text-muted">
-                      Merk Jenis & Tahun Keluaran
-                    </small> */}
+                    <small className="form-text text-muted">
+                      Tidak menemukan kendaraan anda?, silahkan
+                      <a href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku">
+                        hubungi kami
+                      </a>
+                    </small>
                   </div>
                   <div className="form-group">
-                    <label>Ekspetasi Nominal Pinjaman</label>
+                    <label>Nominal Pinjaman</label>
                     <CurrencyFormat
                       name="ekspetasiPinjaman"
                       className="form-control active-input ekspetasiPinjaman"
@@ -300,7 +309,7 @@ export default class Motor extends Component {
                           $(".isi-manual").show();
                         }}
                       >
-                        Pencairan Maksimal
+                        Pinjaman Maksimal
                       </button>
                       <button
                         type="button"
@@ -331,34 +340,15 @@ export default class Motor extends Component {
                       <option value="23">23 Bulan</option>
                     </select>
                     <small className="form-text text-muted">
-                      Tidak menemukan tenor yang cocok, silahkan kontak kami
+                      Tidak menemukan tenor yang cocok?, silahkan
+                      <a href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku">
+                        hubungi kami
+                      </a>
                     </small>
-                  </div>
-
-                  <div class="alert alert-info" role="alert">
-                    <strong>Info</strong>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="alert"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <ul>
-                      <li>Bunga 1.9% perbulan sd 21.09% pertahun</li>
-                      <li>Administrasi Rp625.000 - Rp.675.000 </li>
-                      <li>Asuransi 2.5% - 4.5% </li>
-                    </ul>
                   </div>
                 </div>
                 <div className="card-footer">
-                  <button
-                    type="submit"
-                    name=""
-                    id=""
-                    className="btn btn-warning btn-block"
-                  >
+                  <button type="submit" className="btn btn-warning btn-block">
                     Hitung
                   </button>
                 </div>
@@ -367,19 +357,15 @@ export default class Motor extends Component {
 
             <div
               id="hasilSimulasi"
-              className="card"
+              className="card card-formulir"
               style={{
                 marginTop: "20px",
                 marginBottom: "20px"
               }}
             >
-              {/* <div className="card-header">Hasil Simulasi</div> */}
               <div className="table-responsive">
                 <div className="card-body">
-                  <div className="alert alert-success" role="alert">
-                    <strong>Terimakasih,</strong> kami akan segera menghubungi
-                    anda.
-                  </div>
+                  <h5 class="card-title">Hasil Simulasi</h5>
                   <table className="table table-hover">
                     <thead>
                       <tr>
@@ -406,12 +392,61 @@ export default class Motor extends Component {
                       </tr>
                     </tbody>
                   </table>
-
-                  <div class="alert alert-info" role="alert">
-                    <strong>Silahkan lihat persyaratannya </strong>
-                    <a href="//www.mybpkb.com/index.html#persyaratan">Disini</a>
-                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="go-persyaratan">
+          <div className="container">
+            <div className="col-lg-8 offset-lg-2">
+              <div className="text-center">
+                <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+                  Masih punya pertanyaan?
+                </h3>
+
+                <p className="lead">
+                  Sit back & relax, kami akan segera menghubungi anda dalam
+                  waktu dekat.
+                </p>
+
+                <Link
+                  to="/faq"
+                  style={{ marginBottom: 50, color: "white" }}
+                  role="button"
+                  className="btn btn-info"
+                >
+                  Lihat FAQ
+                </Link>
+
+                <a
+                  href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku"
+                  style={{ marginBottom: 50, marginLeft: 5, color: "white" }}
+                  role="button"
+                  className="btn btn-whatsapp"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style={{
+                      color: "white",
+                      marginRight: 5
+                    }}
+                  />
+                  Hubungi Kami
+                </a>
+
+                <div className="clearfix" />
+
+                <img
+                  src={asking}
+                  alt=""
+                  className="image-pelajari"
+                  style={{
+                    width: 200,
+                    height: 200
+                  }}
+                />
               </div>
             </div>
           </div>

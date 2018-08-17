@@ -9,7 +9,7 @@ export default class Header extends Component {
         <div className="container">
           <div className="float-left">
             <Link to="/" className="navbar-brand">
-              <img src={Logo} width="90" height="40" alt />
+              <img src={Logo} width="90" height="40" alt="logo" />
             </Link>
           </div>
 
@@ -114,16 +114,11 @@ export default class Header extends Component {
           </div>
 
           <div className="collapse navbar-collapse" id="navcol-1">
-            <ul className="nav navbar-nav">
+            <ul className="nav navbar-nav mr-auto">
               <li className="nav-item" role="presentation">
-                <Link className="nav-link active" to="/simulasi/mobil">
-                  Simulasi Mobil
-                </Link>
-              </li>
-              <li className="nav-item" role="presentation">
-                <Link className="nav-link active" to="/simulasi/motor">
-                  Simulasi Motor
-                </Link>
+                <a className="nav-link active" href="https://about.mybpkb.com">
+                  Tentang Kami
+                </a>
               </li>
               <li className="nav-item" role="presentation">
                 <Link className="nav-link active" to="/faq">
@@ -134,6 +129,36 @@ export default class Header extends Component {
                 <Link className="nav-link active" to="/contact">
                   Contact
                 </Link>
+              </li>
+            </ul>
+            <ul className="navbar-nav">
+              <li className="nav-item" role="presentation">
+                <Link className="nav-link active" to="/simulasi/mobil">
+                  Simulasi Mobil
+                </Link>
+              </li>
+              <li className="nav-item" role="presentation">
+                <Link className="nav-link active" to="/simulasi/motor">
+                  Simulasi Motor
+                </Link>
+              </li>
+
+              <li className="nav-item d-none d-md-block" role="presentation">
+                <button
+                  type="button"
+                  class="btn btn-whatsapp"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style={{
+                      color: "white",
+                      marginRight: 5
+                    }}
+                  />
+                  Hubungi Kami
+                </button>
               </li>
             </ul>
           </div>

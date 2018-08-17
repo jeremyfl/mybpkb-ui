@@ -101,7 +101,8 @@ nav {
   padding-top: 10px;
   padding-bottom: 30px;
 }
-#pelajari {
+#pelajari,
+#go-persyaratan {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   margin: 20px 0;

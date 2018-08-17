@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import $ from "jquery";
 import CurrencyFormat from "react-currency-format";
+
+// image
+import asking from "./../images/asking.svg";
 
 window.jQuery = $;
 window.$ = $;
@@ -20,8 +24,9 @@ export default class Mobil extends Component {
   }
 
   componentDidMount = () => {
+    window.scrollTo(0, 0);
     $("#hasilSimulasi").hide();
-    $(".isi-manual").hide();
+    // $("#go-persyaratan").hide();
 
     const self = this;
 
@@ -121,6 +126,7 @@ export default class Mobil extends Component {
 
         // show table
         $("#hasilSimulasi").show();
+        $("#go-persyaratan").show();
 
         // scroll to table
         $("html, body").animate(
@@ -148,7 +154,7 @@ export default class Mobil extends Component {
     return (
       <section>
         <div
-          className="highlight-blue gedung-wom"
+          className="highlight-blue"
           style={{
             // background: "#1e6add",
             paddingTop: "100px",
@@ -227,6 +233,9 @@ export default class Mobil extends Component {
                       placeholder="Contoh: Jakarta"
                       required=""
                     />
+                    <small className="form-text text-muted">
+                      Kami membutuhkannya untuk mencari kantor cabang terdekat
+                    </small>
                   </div>
                   <div className="form-group">
                     <label>Jenis Kendaraan</label>
@@ -238,16 +247,19 @@ export default class Mobil extends Component {
                       id="input-mobil"
                       required=""
                     />
-                    {/* <small className="form-text text-muted">
-                      Merk Jenis & Tahun Keluaran
-                    </small> */}
+                    <small className="form-text text-muted">
+                      Tidak menemukan kendaraan anda?, silahkan
+                      <a href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku">
+                        kontak kami
+                      </a>
+                    </small>
                   </div>
                   <div className="form-group">
-                    <label>Ekspetasi Nominal Pinjaman</label>
+                    <label>Nominal Pinjaman</label>
                     <CurrencyFormat
                       name="ekspetasiPinjaman"
                       className="form-control active-input ekspetasiPinjaman"
-                      placeholder="Jumlah Ekspetasi Pinjaman"
+                      placeholder="Ketik disini untuk mengisi manual"
                       thousandSeparator={true}
                       prefix={"Rp"}
                       autoComplete="off"
@@ -295,7 +307,7 @@ export default class Mobil extends Component {
                           $(".isi-manual").show();
                         }}
                       >
-                        Pencairan Maksimal
+                        Pinjaman Maksimal
                       </button>
                       <button
                         type="button"
@@ -324,38 +336,16 @@ export default class Mobil extends Component {
                       <option value="24">2 Tahun</option>
                       <option value="36">3 Tahun</option>
                     </select>
-                  </div>
-
-                  <div class="alert alert-info" role="alert">
-                    <strong>Info</strong>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="alert"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <ul style={{ fontWeight: "bolder" }}>
-                      <li>Provisi 0%</li>
-                      <li>Bunga 10.8% sd 12.5% pertahun</li>
-                      <li>
-                        Biaya administrasi 1.700.000 sd 3.000.000 tergantung
-                        jumlah pinjaman.
-                      </li>
-                      <li>
-                        Biaya asuransi 0.75% per tahun dari harga otr kendaraan.
-                      </li>
-                    </ul>
+                    <small className="form-text text-muted">
+                      Tidak menemukan tenor yang cocok, silahkan
+                      <a href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku">
+                        kontak kami
+                      </a>
+                    </small>
                   </div>
                 </div>
                 <div className="card-footer">
-                  <button
-                    type="submit"
-                    name=""
-                    id=""
-                    className="btn btn-warning btn-block btn-lg"
-                  >
+                  <button type="submit" className="btn btn-block btn-warning">
                     <strong>Hitung</strong>
                   </button>
                 </div>
@@ -364,19 +354,15 @@ export default class Mobil extends Component {
 
             <div
               id="hasilSimulasi"
-              className="card"
+              className="card card-formulir"
               style={{
                 marginTop: "20px",
                 marginBottom: "20px"
               }}
             >
-              {/* <div className="card-header">Hasil Simulasi</div> */}
               <div className="table-responsive">
                 <div className="card-body">
-                  <div className="alert alert-success" role="alert">
-                    <strong>Terimakasih,</strong> kami akan segera menghubungi
-                    anda.
-                  </div>
+                  <h5 class="card-title">Hasil Simulasi</h5>
                   <table className="table table-hover">
                     <thead>
                       <tr>
@@ -403,11 +389,60 @@ export default class Mobil extends Component {
                       </tr>
                     </tbody>
                   </table>
-                  <div class="alert alert-info" role="alert">
-                    <strong>Silahkan lihat persyaratannya </strong>
-                    <a href="//www.mybpkb.com/index.html#persyaratan">Disini</a>
-                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="go-persyaratan">
+          <div className="container">
+            <div className="col-lg-8 offset-lg-2">
+              <div className="text-center">
+                <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+                  Masih punya pertanyaan?
+                </h3>
+
+                <p className="lead">
+                  Sit back & relax, kami akan segera menghubungi anda dalam
+                  waktu dekat.
+                </p>
+
+                <Link
+                  to="/faq"
+                  style={{ marginBottom: 50, color: "white" }}
+                  role="button"
+                  className="btn btn-info"
+                >
+                  Lihat FAQ
+                </Link>
+
+                <a
+                  href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku"
+                  style={{ marginBottom: 50, marginLeft: 5, color: "white" }}
+                  role="button"
+                  className="btn btn-whatsapp"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style={{
+                      color: "white",
+                      marginRight: 5
+                    }}
+                  />
+                  Hubungi Kami
+                </a>
+
+                <div className="clearfix" />
+
+                <img
+                  src={asking}
+                  alt=""
+                  className="image-pelajari"
+                  style={{
+                    width: 200,
+                    height: 200
+                  }}
+                />
               </div>
             </div>
           </div>

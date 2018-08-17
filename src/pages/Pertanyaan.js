@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 export default class Pertanyaan extends Component {
+  componentDidMount = () => {
+    window.scrollTo(0, 0);
+  };
+
   render() {
     return (
       <section>
@@ -129,6 +133,46 @@ export default class Pertanyaan extends Component {
                   <p className="card-text">
                     Untuk mobilku bisa. Asalkan atas nama sendiri kendaraannya.
                     Untuk motor tidak bisa.
+                  </p>
+                </li>
+                <li className="list-group-item">
+                  <h5 className="card-title">
+                    Berapa bunga, administrasi & asuransinya?
+                  </h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Mobilku</h6>
+                  <ul>
+                    <li>Provisi 0%</li>
+                    <li>Bunga 10.8% sd 12.5% pertahun</li>
+                    <li>
+                      Biaya administrasi 1.700.000 sd 3.000.000 tergantung
+                      jumlah pinjaman.
+                    </li>
+                    <li>
+                      Biaya asuransi 0.75% per tahun dari harga otr kendaraan.
+                    </li>
+                  </ul>
+                  <br />
+                  <h6 className="card-subtitle mb-2 text-muted">MotorKu</h6>
+                  <p className="card-text">
+                    <ul>
+                      <li>Bunga 1.9% perbulan atau 21.09% pertahun</li>
+                      <li>Administrasi Rp625.000 - Rp.675.000</li>
+                      <li>Asuransi 2.5% - 4.5%</li>
+                    </ul>
+                  </p>
+                </li>
+                <li className="list-group-item">
+                  <h5 className="card-title">
+                    Berapa minimal tahun kendaraan yang bisa dibiayai?
+                  </h5>
+                  <h6 className="card-subtitle mb-2 text-muted">Mobilku</h6>
+                  <p className="card-text">
+                    Untuk motor minimal th 2008. Honda, yamaha, suzuki, kawasaki
+                    dan vespa. Mobil minimal th 2003. Hampir semua merk mobil.
+                    Buatan jepang, eropa, amerika dan korea.
+                  </p>
+                  <p className="card-text">
+                    Untuk mobil ex taksi atau limo belum bisa dibiayai.
                   </p>
                 </li>
               </ul>
