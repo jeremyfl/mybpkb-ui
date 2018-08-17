@@ -13,7 +13,7 @@ export default class Footer extends Component {
       >
         <div class="container">
           <div className="text-center">
-            <span className="text-muted">
+            <span className="">
               <strong>Copyright 2018 MyBPKB</strong>
             </span>
           </div>

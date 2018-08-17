@@ -252,7 +252,7 @@ export default class Motor extends Component {
                     <CurrencyFormat
                       name="ekspetasiPinjaman"
                       className="form-control active-input ekspetasiPinjaman"
-                      placeholder="Jumlah Ekspetasi Pinjaman"
+                      placeholder="Ketik disini untuk mengisi manual"
                       thousandSeparator={true}
                       prefix={"Rp"}
                       autoComplete="off"
