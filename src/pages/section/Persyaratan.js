@@ -7,6 +7,8 @@ import stnk_bpkb from "../../images/stnk_bpkb.svg";
 import rek_tabungan from "../../images/rek_tabungan.svg";
 import npwp from "../../images/npwp.svg";
 
+// Males load
+import LazyLoad from "react-lazyload";
 export default class Persyaratan extends Component {
   render() {
     return (
@@ -23,34 +25,46 @@ export default class Persyaratan extends Component {
               </p>
 
               <div className="ilustration">
-                <div class="row">
-                  <div class="col-4">
-                    <img src={ktp} alt="" />
+                <div className="row">
+                  <div className="col-4">
+                    <LazyLoad once>
+                      <img src={ktp} alt="" />
+                    </LazyLoad>
                     <h4>KTP Aktif</h4>
                   </div>
-                  <div class="col-4">
-                    <img src={slip_gaji} alt="" />
+                  <div className="col-4">
+                    <LazyLoad once>
+                      <img src={slip_gaji} alt="" />
+                    </LazyLoad>
                     <h4>Slip Gaji</h4>
                   </div>
-                  <div class="col-4">
-                    <img src={rek_tabungan} alt="" />
+                  <div className="col-4">
+                    <LazyLoad once>
+                      <img src={rek_tabungan} alt="" />
+                    </LazyLoad>
                     <h4>
                       Rekening Tabungan <small>(Khusus Mobil)</small>
                     </h4>
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-4">
-                    <img src={rek_listrik} alt="" />
+                <div className="row">
+                  <div className="col-4">
+                    <LazyLoad once>
+                      <img src={rek_listrik} alt="" />
+                    </LazyLoad>
                     <h4>Rekening Listrik</h4>
                   </div>
-                  <div class="col-4">
-                    <img src={stnk_bpkb} alt="" />
+                  <div className="col-4">
+                    <LazyLoad once>
+                      <img src={stnk_bpkb} alt="" />
+                    </LazyLoad>
                     <h4>STNK BPKB</h4>
                   </div>
-                  <div class="col-4">
-                    <img src={npwp} alt="" />
+                  <div className="col-4">
+                    <LazyLoad once>
+                      <img src={npwp} alt="" />
+                    </LazyLoad>
                     <h4>
                       NPWP <small>(Khusus Mobil)</small>
                     </h4>

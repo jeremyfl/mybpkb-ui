@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 // section
 import Persyaratan from "./section/Persyaratan";
 
+// Males load
+import LazyLoad from "react-lazyload";
+
 import slide1 from "../images/banner_1.jpg";
 import slide2 from "../images/banner_2.jpg";
 import slide3 from "../images/banner_3.jpg";
@@ -32,13 +35,31 @@ export default class Home extends Component {
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img className="d-block w-100" src={slide1} alt="First slide" />
+                <LazyLoad once>
+                  <img
+                    className="d-block w-100"
+                    src={slide1}
+                    alt="First slide"
+                  />
+                </LazyLoad>
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" src={slide2} alt="First slide" />
+                <LazyLoad once>
+                  <img
+                    className="d-block w-100"
+                    src={slide2}
+                    alt="First slide"
+                  />
+                </LazyLoad>
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" src={slide3} alt="First slide" />
+                <LazyLoad once>
+                  <img
+                    className="d-block w-100"
+                    src={slide3}
+                    alt="First slide"
+                  />
+                </LazyLoad>
               </div>
             </div>
             <a
@@ -202,10 +223,9 @@ export default class Home extends Component {
           <div className="container">
             <div className="col-lg-8 offset-lg-2">
               <div className="text-center">
-                <h2 style={{ marginTop: 20, marginBottom: 20 }}>
-                  Kami membantu calon konsumen yang sedang membutuhkan dana
-                  tunai
-                </h2>
+                <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+                  Kami membantu konsumen yang sedang membutuhkan dana tunai
+                </h3>
 
                 <p className="lead">
                   Seperti untuk keperluan modal usaha, biaya Pendidikan,
@@ -216,7 +236,7 @@ export default class Home extends Component {
                   href="#persyaratan"
                   style={{ marginBottom: 50, color: "white" }}
                   role="button"
-                  className="btn btn-info btn-lg"
+                  className="btn btn-info"
                 >
                   Lihat Persyaratannya
                 </a>

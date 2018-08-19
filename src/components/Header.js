@@ -89,12 +89,12 @@ export default class Header extends Component {
           <div className="float-right d-md-none">
             <button
               type="button"
-              class="btn btn-sm btn-whatsapp"
+              className="btn btn-sm btn-whatsapp"
               data-toggle="modal"
               data-target="#exampleModal"
             >
               <i
-                class="fab fa-whatsapp"
+                className="fab fa-whatsapp"
                 style={{
                   color: "white",
                   marginRight: 5
@@ -146,12 +146,12 @@ export default class Header extends Component {
               <li className="nav-item d-none d-md-block" role="presentation">
                 <button
                   type="button"
-                  class="btn btn-whatsapp"
+                  className="btn btn-whatsapp"
                   data-toggle="modal"
                   data-target="#exampleModal"
                 >
                   <i
-                    class="fab fa-whatsapp"
+                    className="fab fa-whatsapp"
                     style={{
                       color: "white",
                       marginRight: 5
