@@ -30,8 +30,8 @@ export default class Statistik extends Component {
     };
     const danaCount = {
       start: 0,
-      count: 50000000,
-      duration: 2000,
+      count: 84,
+      duration: 5000,
       useGroup: true,
       animation: "up"
     };
@@ -43,7 +43,7 @@ export default class Statistik extends Component {
             <LazyLoad once>
               <img src={founded} alt="" />
             </LazyLoad>
-            <h4>Januari 2008</h4>
+            <h4>Oktober 2015</h4>
             <small>Founded</small>
           </div>
           <div className="col-lg-3">
@@ -51,16 +51,16 @@ export default class Statistik extends Component {
               <img src={happyman} alt="" />
             </LazyLoad>
             <h4>
-              <AnimationCount {...clientCount} /> Client
+              <AnimationCount {...clientCount} />
             </h4>
-            <small>Sejak 2008</small>
+            <small>Happy Client</small>
           </div>
           <div className="col-lg-3">
             <LazyLoad once>
               <img src={sepakat} alt="" />
             </LazyLoad>
             <h4>
-              <AnimationCount {...sepakatCount} /> Transaksi
+              <AnimationCount {...sepakatCount} />
             </h4>
             <small>Mobil & Motor</small>
           </div>
@@ -69,10 +69,9 @@ export default class Statistik extends Component {
               <img src={dana} alt="" />
             </LazyLoad>
             <h4>
-              Sebesar
               <AnimationCount {...danaCount} />
             </h4>
-            <small>Juta Dana Sudah Dicairkan</small>
+            <small>Miliar Dana Cair</small>
           </div>
         </div>
       </div>
