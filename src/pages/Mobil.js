@@ -174,7 +174,10 @@ export default class Mobil extends Component {
 
         <div
           className="container"
-          style={{ marginTop: "-60px", paddingBottom: "50px" }}
+          style={{
+            marginTop: "-60px",
+            paddingBottom: "40px"
+          }}
         >
           <div className="col-lg-8 offset-lg-2">
             <div className="card card-formulir">
@@ -199,9 +202,9 @@ export default class Mobil extends Component {
                       required=""
                       placeholder="Contoh: 081288788836"
                     />
-                    <small className="form-text text-muted">
+                    {/* <small className="form-text text-muted">
                       WhatsApp / SMS yang bisa dihubungi
-                    </small>
+                    </small> */}
                   </div>
                   <div className="form-group">
                     <label>Email</label>
@@ -234,9 +237,9 @@ export default class Mobil extends Component {
                       placeholder="Contoh: Jakarta"
                       required=""
                     />
-                    <small className="form-text text-muted">
+                    {/* <small className="form-text text-muted">
                       Kami membutuhkannya untuk mencari kantor cabang terdekat
-                    </small>
+                    </small> */}
                   </div>
                   <div className="form-group">
                     <label>Jenis Kendaraan</label>
@@ -260,45 +263,12 @@ export default class Mobil extends Component {
                     <CurrencyFormat
                       name="ekspetasiPinjaman"
                       className="form-control active-input ekspetasiPinjaman"
-                      placeholder="Ketik disini untuk mengisi manual"
+                      placeholder="Jumlah Pinjaman"
                       thousandSeparator={true}
                       prefix={"Rp"}
                       autoComplete="off"
                     />
                     <small className="form-text text-muted">
-                      <button
-                        type="button"
-                        className="btn btn-info btn-sm button-pilihan-harga"
-                        onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp30,000,000");
-                          $(".ekspetasiPinjaman").attr("disabled", true);
-                          $(".isi-manual").show();
-                        }}
-                      >
-                        30.000.000
-                      </button>
-                      <button
-                        type="button"
-                        className="btn btn-info btn-sm button-pilihan-harga"
-                        onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp50,000,000");
-                          $(".ekspetasiPinjaman").attr("disabled", true);
-                          $(".isi-manual").show();
-                        }}
-                      >
-                        50.000.000
-                      </button>
-                      <button
-                        type="button"
-                        className="btn btn-info btn-sm button-pilihan-harga"
-                        onClick={() => {
-                          $(".ekspetasiPinjaman").val("Rp100,000,000");
-                          $(".ekspetasiPinjaman").attr("disabled", true);
-                          $(".isi-manual").show();
-                        }}
-                      >
-                        100.000.000
-                      </button>
                       <button
                         type="button"
                         className="btn btn-warning btn-sm button-pilihan-harga"
@@ -357,13 +327,12 @@ export default class Mobil extends Component {
               id="hasilSimulasi"
               className="card card-formulir"
               style={{
-                marginTop: "20px",
-                marginBottom: "20px"
+                marginTop: "20px"
               }}
             >
               <div className="table-responsive">
                 <div className="card-body">
-                  <h5 class="card-title">Hasil Simulasi</h5>
+                  <h5 className="card-title">Hasil Simulasi</h5>
                   <table className="table table-hover">
                     <thead>
                       <tr>
@@ -395,7 +364,8 @@ export default class Mobil extends Component {
             </div>
           </div>
         </div>
-        <div id="go-persyaratan">
+
+        <div id="go-persyaratan" className="white-bg img-bottom">
           <div className="container">
             <div className="col-lg-8 offset-lg-2">
               <div className="text-center">
@@ -424,7 +394,7 @@ export default class Mobil extends Component {
                   className="btn btn-whatsapp"
                 >
                   <i
-                    class="fab fa-whatsapp"
+                    className="fab fa-whatsapp"
                     style={{
                       color: "white",
                       marginRight: 5

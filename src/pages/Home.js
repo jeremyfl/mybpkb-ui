@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // section
 import Persyaratan from "./section/Persyaratan";
+import Statistik from "./section/Statistik";
 
 // Males load
 import LazyLoad from "react-lazyload";
@@ -219,11 +220,11 @@ export default class Home extends Component {
           </div>
         </div>
 
-        <div id="pelajari">
+        <div id="pelajari" className="white-bg img-bottom">
           <div className="container">
             <div className="col-lg-8 offset-lg-2">
               <div className="text-center">
-                <h3 style={{ marginTop: 20, marginBottom: 20 }}>
+                <h3>
                   Kami membantu konsumen yang sedang membutuhkan dana tunai
                 </h3>
 
@@ -258,6 +259,25 @@ export default class Home extends Component {
         </div>
 
         <Persyaratan />
+
+        <div
+          id="about-home"
+          className="gedung-wom"
+          style={{ backgroundPosition: "center center" }}
+        >
+          <div className="container text-center">
+            <div className="row">
+              <div className="col-lg-8 offset-lg-2 text-white">
+                <h3>Siapa Kami?</h3>
+                <p className="lead">
+                  Kami adalah Divisi Pembiayaan Multiguna WOM Finance.
+                </p>
+
+                <Statistik />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

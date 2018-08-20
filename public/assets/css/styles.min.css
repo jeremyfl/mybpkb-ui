@@ -5,10 +5,7 @@ nav {
   border-color: transparent;
 }
 .gedung-wom {
-  background-image: linear-gradient(
-      rgba(34, 46, 96, 0.9),
-      rgba(34, 46, 96, 0.8)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
     url("https://image.ibb.co/e4xUZT/gedungwom.jpg");
   background-position: top center;
   background-size: cover;
@@ -102,15 +99,32 @@ nav {
   padding-bottom: 30px;
 }
 
-#pelajari,
-#go-persyaratan {
+/* Universial Variable */
+.white-bg {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background: white;
   margin: 20px 0;
   padding-top: 30px;
-  /* padding: 30px 0; */
-  background: white;
+  padding-bottom: 30px;
 }
+.white-bg h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img-bottom {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.ilustration img {
+  width: 90px;
+  height: 90px;
+  margin: 20px 0;
+}
+
+/* End Universal Variable */
 
 #persyaratan {
   margin: 20px 0;
@@ -120,10 +134,8 @@ nav {
   margin: 50px 0;
 }
 
-#persyaratan img {
-  width: 90px;
-  height: 90px;
-  margin: 20px 0;
+#about-home {
+  padding: 50px 0;
 }
 
 @media (max-width: 575.98px) {
