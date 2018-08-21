@@ -27,19 +27,19 @@ export default class Persyaratan extends Component {
               <div className="ilustration">
                 <div className="row">
                   <div className="col-4">
-                    <LazyLoad once>
+                    <LazyLoad height={90} once>
                       <img src={ktp} alt="" />
                     </LazyLoad>
                     <h4>KTP Aktif</h4>
                   </div>
                   <div className="col-4">
-                    <LazyLoad once>
+                    <LazyLoad height={90} once>
                       <img src={slip_gaji} alt="" />
                     </LazyLoad>
                     <h4>Slip Gaji</h4>
                   </div>
                   <div className="col-4">
-                    <LazyLoad once>
+                    <LazyLoad height={90} once>
                       <img src={rek_tabungan} alt="" />
                     </LazyLoad>
                     <h4>
@@ -50,19 +50,19 @@ export default class Persyaratan extends Component {
 
                 <div className="row">
                   <div className="col-4">
-                    <LazyLoad once>
+                    <LazyLoad height={90} once>
                       <img src={rek_listrik} alt="" />
                     </LazyLoad>
                     <h4>Rekening Listrik</h4>
                   </div>
                   <div className="col-4">
-                    <LazyLoad once>
+                    <LazyLoad height={90} once>
                       <img src={stnk_bpkb} alt="" />
                     </LazyLoad>
                     <h4>STNK BPKB</h4>
                   </div>
                   <div className="col-4">
-                    <LazyLoad once>
+                    <LazyLoad height={90} once>
                       <img src={npwp} alt="" />
                     </LazyLoad>
                     <h4>
@@ -74,7 +74,7 @@ export default class Persyaratan extends Component {
 
               <p className="lead">Semua persyaratan terpenuhi?</p>
               <a
-                className="btn btn-warning btn-lg"
+                className="btn btn-warning"
                 href="#pilih-simulasi"
                 role="button"
               >

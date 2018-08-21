@@ -36,7 +36,7 @@ export default class Home extends Component {
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <LazyLoad offset={100} once>
+                <LazyLoad height={400} offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide1}
@@ -45,7 +45,7 @@ export default class Home extends Component {
                 </LazyLoad>
               </div>
               <div className="carousel-item">
-                <LazyLoad offset={100} once>
+                <LazyLoad height={400} offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide2}
@@ -54,7 +54,7 @@ export default class Home extends Component {
                 </LazyLoad>
               </div>
               <div className="carousel-item">
-                <LazyLoad offset={100} once>
+                <LazyLoad height={400} offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide3}
@@ -262,7 +262,7 @@ export default class Home extends Component {
 
         <div
           id="about-home"
-          className="bg-white"
+          className="white-bg"
           style={{ backgroundPosition: "center center" }}
         >
           <div className="container text-center">
@@ -274,6 +274,10 @@ export default class Home extends Component {
                 </p>
 
                 <Statistik />
+
+                <button className="btn btn-primary" style={{ marginTop: 20 }}>
+                  Apa itu WOM Finance?
+                </button>
               </div>
             </div>
           </div>

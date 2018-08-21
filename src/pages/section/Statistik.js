@@ -39,15 +39,15 @@ export default class Statistik extends Component {
     return (
       <div className="ilustration">
         <div className="row">
-          <div className="col-lg-3">
-            <LazyLoad once>
+          <div className="col-6 col-lg-3">
+            <LazyLoad height={90} once>
               <img src={founded} alt="" />
             </LazyLoad>
             <h4>Oktober 2015</h4>
             <small>Founded</small>
           </div>
-          <div className="col-lg-3">
-            <LazyLoad once>
+          <div className="col-6 col-lg-3">
+            <LazyLoad height={90} once>
               <img src={happyman} alt="" />
             </LazyLoad>
             <h4>
@@ -55,8 +55,8 @@ export default class Statistik extends Component {
             </h4>
             <small>Happy Client</small>
           </div>
-          <div className="col-lg-3">
-            <LazyLoad once>
+          <div className="col-6 col-lg-3">
+            <LazyLoad height={90} once>
               <img src={sepakat} alt="" />
             </LazyLoad>
             <h4>
@@ -64,8 +64,8 @@ export default class Statistik extends Component {
             </h4>
             <small>Mobil & Motor</small>
           </div>
-          <div className="col-lg-3">
-            <LazyLoad once>
+          <div className="col-6 col-lg-3">
+            <LazyLoad height={90} once>
               <img src={dana} alt="" />
             </LazyLoad>
             <h4>

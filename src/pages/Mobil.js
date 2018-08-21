@@ -195,7 +195,7 @@ export default class Mobil extends Component {
                     <label>Nomor HP</label>
                     <input
                       className="form-control active-input"
-                      type="number"
+                      type="tel"
                       name="no_tlp"
                       required=""
                       placeholder="Contoh: 081288788836"
