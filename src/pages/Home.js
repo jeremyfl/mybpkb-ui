@@ -36,7 +36,7 @@ export default class Home extends Component {
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <LazyLoad height={400} offset={100} once>
+                <LazyLoad offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide1}
@@ -45,7 +45,7 @@ export default class Home extends Component {
                 </LazyLoad>
               </div>
               <div className="carousel-item">
-                <LazyLoad height={400} offset={100} once>
+                <LazyLoad offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide2}
@@ -54,7 +54,7 @@ export default class Home extends Component {
                 </LazyLoad>
               </div>
               <div className="carousel-item">
-                <LazyLoad height={400} offset={100} once>
+                <LazyLoad offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide3}
@@ -86,14 +86,14 @@ export default class Home extends Component {
         <div id="pilih-simulasi">
           <div className="container">
             <div style={{ marginTop: 20, marginBottom: 20 }}>
-              <h2 className="text-center">Simulasikan Kendaraan Anda</h2>
+              <h3 className="text-center">Simulasikan Kendaraan Anda</h3>
               <p className="text-center">
                 Anda akan mendapatkan total pencairan, angsuran, dan lama tenor
                 yang bisa anda pilih.
               </p>
             </div>
 
-            <div id="mobile" className="d-md-none">
+            <div id="mobile" className="col-sm-12 col-lg-8 offset-lg-2">
               <div className="card">
                 <ul className="list-group list-group-flush">
                   <Link className="list-group-item" to="/simulasi/mobil">
@@ -115,106 +115,6 @@ export default class Home extends Component {
                     Gadai BPKB Truck
                   </a>
                 </ul>
-              </div>
-            </div>
-
-            <div
-              id="desktop"
-              className="d-none d-md-block d-sm-none col-md-8 offset-md-2"
-            >
-              <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
-                <div className="card-body">
-                  <div className="row">
-                    <div className="col-md-9">
-                      <div className="float-left">
-                        <i
-                          className="fas fa-motorcycle"
-                          style={{
-                            fontSize: 50,
-                            textAlign: "center",
-                            display: "block",
-                            marginRight: 20
-                          }}
-                        />
-                      </div>
-                      <h5 className="card-title">Simulasi Kendaraan Motor</h5>
-                      <h6 className="card-subtitle mb-2 text-muted">
-                        Range bunga 1.9% sd 21.09% pertahun
-                      </h6>
-                    </div>
-                    <div className="col-md-3">
-                      <Link
-                        to="/simulasi/motor"
-                        className="btn btn-success btn-block"
-                      >
-                        Hitung
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
-                <div className="card-body">
-                  <div className="row">
-                    <div className="col-md-9">
-                      <div className="float-left">
-                        <i
-                          className="fas fa-car"
-                          style={{
-                            fontSize: 50,
-                            textAlign: "center",
-                            display: "block",
-                            marginRight: 20
-                          }}
-                        />
-                      </div>
-                      <h5 className="card-title">Simulasi Kendaraan Mobil</h5>
-                      <h6 className="card-subtitle mb-2 text-muted">
-                        Range bunga 10.8% sd 12.5% pertahun
-                      </h6>
-                    </div>
-                    <div className="col-md-3">
-                      <Link
-                        to="/simulasi/mobil"
-                        className="btn btn-success btn-block"
-                      >
-                        Hitung
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="card" style={{ marginTop: 5, marginBottom: 5 }}>
-                <div className="card-body">
-                  <div className="row">
-                    <div className="col-md-9">
-                      <div className="float-left">
-                        <i
-                          className="fas fa-truck"
-                          style={{
-                            fontSize: 50,
-                            textAlign: "center",
-                            display: "block",
-                            marginRight: 20
-                          }}
-                        />
-                      </div>
-                      <h5 className="card-title">Simulasi Kendaraan Truck</h5>
-                      <h6 className="card-subtitle mb-2 text-muted">
-                        Saat ini belum tersedia
-                      </h6>
-                    </div>
-                    <div className="col-md-3">
-                      <a
-                        href="https://api.whatsapp.com/send?phone=6281288788836"
-                        className="btn btn-success btn-block"
-                      >
-                        Hitung
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -275,7 +175,13 @@ export default class Home extends Component {
 
                 <Statistik />
 
-                <button className="btn btn-primary" style={{ marginTop: 20 }}>
+                <button
+                  onClick={() => {
+                    alert("Page coming very soon");
+                  }}
+                  className="btn btn-primary"
+                  style={{ marginTop: 20 }}
+                >
                   Apa itu WOM Finance?
                 </button>
               </div>

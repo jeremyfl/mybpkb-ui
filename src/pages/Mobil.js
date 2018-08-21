@@ -352,8 +352,7 @@ export default class Mobil extends Component {
                 </h3>
 
                 <p className="lead">
-                  Sit back & relax, kami akan segera menghubungi anda dalam
-                  waktu dekat.
+                  Kami akan segera menghubungi anda dalam waktu dekat.
                 </p>
 
                 <Link

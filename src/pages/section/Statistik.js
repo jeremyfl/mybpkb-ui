@@ -62,7 +62,7 @@ export default class Statistik extends Component {
             <h4>
               <AnimationCount {...sepakatCount} />
             </h4>
-            <small>Mobil & Motor</small>
+            <small>Pengajuan Mobil & Motor</small>
           </div>
           <div className="col-6 col-lg-3">
             <LazyLoad height={90} once>
