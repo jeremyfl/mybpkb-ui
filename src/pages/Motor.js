@@ -110,8 +110,6 @@ export default class Motor extends Component {
       id: choosenMotor,
       nama: event.target.nama.value,
       no_tlp: event.target.no_tlp.value,
-      email: event.target.email.value,
-      alamat: event.target.alamat.value,
       kota: choosenKota,
       pinjaman: rupiah,
       tenor: event.target.tenorPinjaman.value
@@ -203,26 +201,6 @@ export default class Motor extends Component {
                     {/* <small className="form-text text-muted">
                       WhatsApp / SMS yang bisa dihubungi
                     </small> */}
-                  </div>
-                  <div className="form-group">
-                    <label>Email</label>
-                    <input
-                      className="form-control active-input"
-                      type="email"
-                      name="email"
-                      placeholder="Contoh: john@gmail.com"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label>Alamat</label>
-                    <input
-                      className="form-control active-input"
-                      type="text"
-                      name="alamat"
-                      placeholder="Alamat Lengkap"
-                      required=""
-                    />
                   </div>
                   <div className="form-group">
                     <label>Kota</label>
