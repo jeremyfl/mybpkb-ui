@@ -36,7 +36,7 @@ export default class Home extends Component {
             </ol>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <LazyLoad once>
+                <LazyLoad offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide1}
@@ -45,7 +45,7 @@ export default class Home extends Component {
                 </LazyLoad>
               </div>
               <div className="carousel-item">
-                <LazyLoad once>
+                <LazyLoad offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide2}
@@ -54,7 +54,7 @@ export default class Home extends Component {
                 </LazyLoad>
               </div>
               <div className="carousel-item">
-                <LazyLoad once>
+                <LazyLoad offset={100} once>
                   <img
                     className="d-block w-100"
                     src={slide3}
@@ -262,12 +262,12 @@ export default class Home extends Component {
 
         <div
           id="about-home"
-          className="gedung-wom"
+          className="bg-white"
           style={{ backgroundPosition: "center center" }}
         >
           <div className="container text-center">
             <div className="row">
-              <div className="col-lg-8 offset-lg-2 text-white">
+              <div className="col-lg-8 offset-lg-2">
                 <h3>Siapa Kami?</h3>
                 <p className="lead">
                   Kami adalah Divisi Pembiayaan Multiguna WOM Finance.
