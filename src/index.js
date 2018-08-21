@@ -10,7 +10,7 @@ const server = window.location.host;
 
 if (
   server === "127.0.0.1:3000" ||
-  server === "127.0.0.1:3344" ||
+  server === "127.0.0.1:3334" ||
   server === "localhost:3000" ||
   server === "localhost:3344"
 ) {

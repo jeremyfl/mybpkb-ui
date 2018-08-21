@@ -384,7 +384,7 @@ export default class Motor extends Component {
 
                 <img
                   src={asking}
-                  alt=""
+                  alt="pelajari"
                   className="image-pelajari"
                   style={{
                     width: 200,
