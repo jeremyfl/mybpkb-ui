@@ -140,7 +140,7 @@ export default class Motor extends Component {
       });
   };
 
-  // future function for dynamic search and fetch mobil
+  // future function for dynamic search and fetch motor
   fetchKendaraan = event => {
     // let listKendaraan = this.state.allMotor;
   };
