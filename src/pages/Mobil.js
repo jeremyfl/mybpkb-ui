@@ -296,7 +296,7 @@ export default class Mobil extends Component {
                 </div>
                 <div className="card-footer">
                   <button type="submit" className="btn btn-block btn-warning">
-                    <strong>Hitung</strong>
+                    Hitung
                   </button>
                 </div>
               </form>
