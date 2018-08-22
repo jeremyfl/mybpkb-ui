@@ -138,6 +138,10 @@ nav {
   padding: 50px 0;
 }
 
+#partnership {
+  margin: 40px 0;
+}
+
 @media (max-width: 575.98px) {
   #persyaratan .ilustration {
     margin: 30px 0;

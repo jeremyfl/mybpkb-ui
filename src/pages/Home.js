@@ -15,6 +15,11 @@ import slide3 from "../images/banner_3.jpg";
 // pelajari
 import money from "../images/money.svg";
 
+// partnership
+import wom from "../images/partner/wom.png";
+import appi from "../images/partner/appi.png";
+import ojk from "../images/partner/ojk.png";
+
 export default class Home extends Component {
   render() {
     return (
@@ -175,6 +180,24 @@ export default class Home extends Component {
                 </p>
 
                 <Statistik />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="partnership">
+          <div className="container text-center">
+            <div className="col-lg-8 offset-lg-2">
+              <div className="row">
+                <div className="col-4">
+                  <img className="img-fluid" src={wom} alt="" />
+                </div>
+                <div className="col-4">
+                  <img className="img-fluid" src={appi} alt="" />
+                </div>
+                <div className="col-4">
+                  <img className="img-fluid" src={ojk} alt="" />
+                </div>
               </div>
             </div>
           </div>
