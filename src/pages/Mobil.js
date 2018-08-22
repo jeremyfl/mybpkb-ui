@@ -253,6 +253,7 @@ export default class Mobil extends Component {
                         onClick={() => {
                           $(".ekspetasiPinjaman").val("Pencairan maksimal");
                           $(".ekspetasiPinjaman").attr("disabled", true);
+                          $(".ekspetasiPinjaman").focus();
                           $(".isi-manual").show();
                         }}
                       >

@@ -262,6 +262,7 @@ export default class Motor extends Component {
                         onClick={() => {
                           $(".ekspetasiPinjaman").val("");
                           $(".ekspetasiPinjaman").attr("disabled", false);
+                          $(".ekspetasiPinjaman").focus();
                           $(".isi-manual").hide();
                         }}
                       >

@@ -180,7 +180,6 @@ export default class Home extends Component {
                     alert("Page coming very soon");
                   }}
                   className="btn btn-primary"
-                  style={{ marginTop: 20 }}
                 >
                   Apa itu WOM Finance?
                 </button>
