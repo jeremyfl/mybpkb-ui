@@ -28,7 +28,7 @@ export default class Statistik extends Component {
               <img src={happyman} alt="" />
             </LazyLoad>
             <h4>
-              <CountUp endCountUp end={50000} />+ Client
+              <CountUp duration={4} endCountUp end={50000} />+ Client
             </h4>
             <small>Sejak 2015</small>
           </div>
@@ -37,7 +37,7 @@ export default class Statistik extends Component {
               <img src={sepakat} alt="" />
             </LazyLoad>
             <h4>
-              <CountUp endCountUp end={50000} />+
+              <CountUp duration={4} endCountUp end={50000} />+
             </h4>
             <small>Pengajuan Mobil & Motor</small>
           </div>
@@ -46,7 +46,7 @@ export default class Statistik extends Component {
               <img src={dana} alt="" />
             </LazyLoad>
             <h4>
-              <CountUp endCountUp end={84} />M
+              <CountUp duration={4} endCountUp end={84} />M
             </h4>
             <small>Dana Telah Cair</small>
           </div>
