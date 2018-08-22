@@ -21,6 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && mv build/index.html build/200.html && surge build https://www.mybpkb.com"
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build https://www.mybpkb.com",
+    "fire": "npm run build && firebase deploy"
   }
 }
