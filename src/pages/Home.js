@@ -83,6 +83,7 @@ export default class Home extends Component {
             </a>
           </div>
         </header>
+
         <div id="pilih-simulasi">
           <div className="container">
             <div style={{ marginTop: 20, marginBottom: 20 }}>
@@ -174,15 +175,6 @@ export default class Home extends Component {
                 </p>
 
                 <Statistik />
-
-                <button
-                  onClick={() => {
-                    alert("Page coming very soon");
-                  }}
-                  className="btn btn-primary"
-                >
-                  Apa itu WOM Finance?
-                </button>
               </div>
             </div>
           </div>

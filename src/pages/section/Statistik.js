@@ -5,37 +5,14 @@ import sepakat from "../../images/statistik/sepakat.svg";
 import happyman from "../../images/statistik/happy_client.svg";
 import dana from "../../images/statistik/dana_cair.svg";
 
+// Counter
+import CountUp from "react-countup";
+
 // Males load
 import LazyLoad from "react-lazyload";
 
-// Count animate
-import "react-count-animation/dist/count.min.css";
-import AnimationCount from "react-count-animation";
-
 export default class Statistik extends Component {
   render() {
-    const clientCount = {
-      start: 0,
-      count: 5000,
-      duration: 2000,
-      useGroup: true,
-      animation: "up"
-    };
-    const sepakatCount = {
-      start: 0,
-      count: 5000,
-      duration: 2000,
-      useGroup: true,
-      animation: "up"
-    };
-    const danaCount = {
-      start: 0,
-      count: 84,
-      duration: 5000,
-      useGroup: true,
-      animation: "up"
-    };
-
     return (
       <div className="ilustration">
         <div className="row">
@@ -51,16 +28,16 @@ export default class Statistik extends Component {
               <img src={happyman} alt="" />
             </LazyLoad>
             <h4>
-              <AnimationCount {...clientCount} />
+              <CountUp endCountUp end={50000} />+ Client
             </h4>
-            <small>Happy Client</small>
+            <small>Sejak 2015</small>
           </div>
           <div className="col-6 col-lg-3">
             <LazyLoad height={90} once>
               <img src={sepakat} alt="" />
             </LazyLoad>
             <h4>
-              <AnimationCount {...sepakatCount} />
+              <CountUp endCountUp end={50000} />+
             </h4>
             <small>Pengajuan Mobil & Motor</small>
           </div>
@@ -69,9 +46,9 @@ export default class Statistik extends Component {
               <img src={dana} alt="" />
             </LazyLoad>
             <h4>
-              <AnimationCount {...danaCount} />
+              <CountUp endCountUp end={84} />M
             </h4>
-            <small>Miliar Dana Cair</small>
+            <small>Dana Telah Cair</small>
           </div>
         </div>
       </div>

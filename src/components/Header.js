@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazyload";
 import Logo from "../images/logo.png";
 
 export default class Header extends Component {
@@ -9,7 +10,9 @@ export default class Header extends Component {
         <div className="container">
           <div className="float-left">
             <Link to="/" className="navbar-brand">
-              <img src={Logo} width="90" height="40" alt="logo" />
+              <LazyLoad offset={100} once>
+                <img src={Logo} width="90" height="40" alt="logo" />
+              </LazyLoad>
             </Link>
           </div>
 
