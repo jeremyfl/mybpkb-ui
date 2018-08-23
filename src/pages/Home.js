@@ -208,13 +208,14 @@ export default class Home extends Component {
                   pelanggan dapat terlayani dengan cepat, tepat, efektif, dan
                   efisien.
                 </p>
-                <a class="btn btn-info" href="#" role="button">
+                <a class="btn btn-info" href="he" role="button">
                   <i className="fas fa-plus" style={{ marginRight: 10 }} />
                   Selengkapnya
                 </a>
               </div>
               <div className="col-lg-6">
                 <iframe
+                  title="About WOM"
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/Vl3Jwtimr5Y"
@@ -229,7 +230,7 @@ export default class Home extends Component {
           </div>
         </div>
 
-        {/* <div id="partnership">
+        <div id="partnership">
           <div className="container text-center">
             <div className="col-lg-8 offset-lg-2">
               <div className="row">
@@ -245,7 +246,7 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
     );
   }

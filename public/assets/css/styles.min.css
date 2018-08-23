@@ -134,12 +134,14 @@ nav {
   margin: 50px 0;
 }
 
-#about-home {
-  padding: 50px 0;
+#about-wom,
+#partnership {
+  padding: 40px 0;
 }
 
-#about-wom {
-  margin: 40px 0;
+#kelebihan-wom img {
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 575.98px) {
