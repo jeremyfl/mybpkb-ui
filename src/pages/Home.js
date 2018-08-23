@@ -235,13 +235,19 @@ export default class Home extends Component {
             <div className="col-lg-8 offset-lg-2">
               <div className="row">
                 <div className="col-4">
-                  <img className="img-fluid" src={wom} alt="" />
+                  <LazyLoad once>
+                    <img className="img-fluid" src={wom} alt="" />
+                  </LazyLoad>
                 </div>
                 <div className="col-4">
-                  <img className="img-fluid" src={appi} alt="" />
+                  <LazyLoad once>
+                    <img className="img-fluid" src={appi} alt="" />
+                  </LazyLoad>
                 </div>
                 <div className="col-4">
-                  <img className="img-fluid" src={ojk} alt="" />
+                  <LazyLoad once>
+                    <img className="img-fluid" src={ojk} alt="" />
+                  </LazyLoad>
                 </div>
               </div>
             </div>

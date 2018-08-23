@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import LazyLoad from "react-lazyload";
+
 import provisi from "./../../images/wom/provisi.svg";
 import waktucepat from "./../../images/wom/waktu.svg";
 import utuh from "./../../images/wom/utuh.svg";
@@ -14,7 +16,9 @@ export default class ShortKelebihanWom extends Component {
           <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
-                <img src={provisi} alt="" />
+                <LazyLoad once>
+                  <img src={provisi} alt="" />
+                </LazyLoad>
               </div>
               <div className="col-10">
                 <h5>Biaya Provisi 0%</h5>
@@ -25,7 +29,9 @@ export default class ShortKelebihanWom extends Component {
           <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
-                <img src={utuh} alt="" />
+                <LazyLoad once>
+                  <img src={utuh} alt="" />
+                </LazyLoad>
               </div>
               <div className="col-10">
                 <h5>Cair Cepat & Utuh</h5>
@@ -39,7 +45,9 @@ export default class ShortKelebihanWom extends Component {
           <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
-                <img src={transparan} alt="" />
+                <LazyLoad once>
+                  <img src={transparan} alt="" />
+                </LazyLoad>
               </div>
               <div className="col-10">
                 <h5>Efisien & Transparan</h5>
@@ -52,7 +60,9 @@ export default class ShortKelebihanWom extends Component {
           <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
-                <img src={waktucepat} alt="" />
+                <LazyLoad once>
+                  <img src={waktucepat} alt="" />
+                </LazyLoad>
               </div>
               <div className="col-10">
                 <h5>Cair dalam 30 Menit</h5>
@@ -63,7 +73,9 @@ export default class ShortKelebihanWom extends Component {
           <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
-                <img src={cabang} alt="" />
+                <LazyLoad once>
+                  <img src={cabang} alt="" />
+                </LazyLoad>
               </div>
               <div className="col-10">
                 <h5>Jangkauan Luas</h5>
@@ -74,7 +86,9 @@ export default class ShortKelebihanWom extends Component {
           <div className="col-lg-4">
             <div className="row">
               <div className="col-2">
-                <img src={notip} alt="" />
+                <LazyLoad once>
+                  <img src={notip} alt="" />
+                </LazyLoad>
               </div>
               <div className="col-10">
                 <h5>No Tipping & Fee</h5>
