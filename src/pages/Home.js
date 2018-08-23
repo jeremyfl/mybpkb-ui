@@ -20,6 +20,8 @@ import wom from "../images/partner/wom.png";
 import appi from "../images/partner/appi.png";
 import ojk from "../images/partner/ojk.png";
 
+import ShortKelebihanWom from "./section/ShortKelebihanWom";
+
 export default class Home extends Component {
   render() {
     return (
@@ -176,7 +178,8 @@ export default class Home extends Component {
               <div className="col-lg-8 offset-lg-2">
                 <h3>Siapa Kami?</h3>
                 <p className="lead">
-                  Kami adalah Divisi Pembiayaan Multiguna WOM Finance.
+                  Kami adalah Divisi Digital Pembiayaan Multiguna Nasional Wom
+                  Finance.
                 </p>
 
                 <Statistik />
@@ -185,7 +188,48 @@ export default class Home extends Component {
           </div>
         </div>
 
-        <div id="partnership">
+        <div id="about-wom">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <h3>Apa itu WOM Finance?</h3>
+                <p>
+                  PT Wahana Ottomitra Multiartha Tbk (“WOM Finance” atau
+                  Perseroan) Didirikan pada tahun 1982 dengan nama PT Jakarta
+                  Tokyo Leasing yang bergerak di bidang pembiayaan sepeda motor,
+                  khususnya pembiayaan untuk sepeda motor merek Honda.
+                </p>
+                <p>
+                  Perseroan terus berupaya untuk mewujudkan visi Perseroan
+                  menjadi salah satu perusahaan pembiayaan terbaik di Indonesia.
+                  Untuk itu, Perseroan akan terus meningkatkan kualitas layanan
+                  yang diberikan kepada seluruh pelanggan, salah satunya dengan
+                  memanfaatkan perkembangan Teknologi Informasi, sehingga
+                  pelanggan dapat terlayani dengan cepat, tepat, efektif, dan
+                  efisien.
+                </p>
+                <a class="btn btn-info" href="#" role="button">
+                  <i className="fas fa-plus" style={{ marginRight: 10 }} />
+                  Selengkapnya
+                </a>
+              </div>
+              <div className="col-lg-6">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/Vl3Jwtimr5Y"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                />
+              </div>
+            </div>
+
+            <ShortKelebihanWom />
+          </div>
+        </div>
+
+        {/* <div id="partnership">
           <div className="container text-center">
             <div className="col-lg-8 offset-lg-2">
               <div className="row">
@@ -201,7 +245,7 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }
