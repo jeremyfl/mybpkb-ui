@@ -1,3 +1,7 @@
+/* import all good css */
+@import url("easy-autocomplete.min.css");
+@import url("animate.min.css");
+
 nav {
   background: #0f1944;
 }
