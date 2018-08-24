@@ -15,9 +15,6 @@ import slide3 from "../images/banner_3.jpg";
 // pelajari
 import money from "../images/money.svg";
 
-// about wom
-import gedungwom from "../images/wom/gedungwom.jpg";
-
 // partnership
 import wom from "../images/partner/wom.png";
 import appi from "../images/partner/appi.png";
@@ -171,11 +168,7 @@ export default class Home extends Component {
 
         <Persyaratan />
 
-        <div
-          id="about-home"
-          className="white-bg"
-          style={{ backgroundPosition: "center center" }}
-        >
+        <div id="about-home" className="white-bg">
           <div className="container text-center">
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
@@ -215,9 +208,6 @@ export default class Home extends Component {
                   <i className="fas fa-plus" style={{ marginRight: 10 }} />
                   Selengkapnya
                 </a>
-              </div>
-              <div className="col-lg-6">
-                {/* <img src={gedungwom} alt="Ilustrasi Kantor WOM" /> */}
               </div>
             </div>
 
