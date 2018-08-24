@@ -139,6 +139,11 @@ nav {
   padding: 40px 0;
 }
 
+#about-wom img {
+  width: 100%;
+  /* height: 100%; */
+}
+
 #kelebihan-wom img {
   width: 50px;
   height: 50px;

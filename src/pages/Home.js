@@ -15,6 +15,9 @@ import slide3 from "../images/banner_3.jpg";
 // pelajari
 import money from "../images/money.svg";
 
+// about wom
+import gedungwom from "../images/wom/gedungwom.jpg";
+
 // partnership
 import wom from "../images/partner/wom.png";
 import appi from "../images/partner/appi.png";
@@ -214,16 +217,7 @@ export default class Home extends Component {
                 </a>
               </div>
               <div className="col-lg-6">
-                <iframe
-                  title="About WOM"
-                  width="100%"
-                  height="100%"
-                  style={{ marginTop: 5 }}
-                  src="https://www.youtube.com/embed/Vl3Jwtimr5Y"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                />
+                {/* <img src={gedungwom} alt="Ilustrasi Kantor WOM" /> */}
               </div>
             </div>
 

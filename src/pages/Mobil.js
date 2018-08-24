@@ -10,7 +10,6 @@ import asking from "./../images/asking.svg";
 window.jQuery = $;
 window.$ = $;
 require("easy-autocomplete");
-
 export default class Mobil extends Component {
   constructor(props) {
     super(props);
