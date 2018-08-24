@@ -208,7 +208,7 @@ export default class Home extends Component {
                   pelanggan dapat terlayani dengan cepat, tepat, efektif, dan
                   efisien.
                 </p>
-                <a class="btn btn-info" href="he" role="button">
+                <a className="btn btn-info" href="he" role="button">
                   <i className="fas fa-plus" style={{ marginRight: 10 }} />
                   Selengkapnya
                 </a>
@@ -218,6 +218,7 @@ export default class Home extends Component {
                   title="About WOM"
                   width="100%"
                   height="100%"
+                  style={{ marginTop: 5 }}
                   src="https://www.youtube.com/embed/Vl3Jwtimr5Y"
                   frameborder="0"
                   allow="autoplay; encrypted-media"
