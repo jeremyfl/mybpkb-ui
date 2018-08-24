@@ -23,13 +23,17 @@ export default class Mobil extends Component {
   }
 
   componentDidMount = () => {
+    // scroll window to top every page loaded
     window.scrollTo(0, 0);
+
+    // hide some element
     $("#hasilSimulasi").hide();
     $("#go-persyaratan").hide();
     $(".isi-manual").hide();
 
     const self = this;
 
+    // need better way to do this two later!
     axios.get("mobil").then(response => {
       self.setState({
         allMobil: response.data
