@@ -16,13 +16,13 @@ export default class Footer extends Component {
                 </p>
               </div>
               <div className="col-lg-4">
-                <h5 className="font-weight-bold">Kontak Telepon</h5>
+                <h5 className="font-weight-bold">Direct Mobilku & Motorku</h5>
                 <ul>
                   <li>
-                    <a href="tel:6281385689789">+6281385689789 (Motorku)</a>
+                    <a href="tel:081385689789">0813-85-689-789</a>
                   </li>
                   <li>
-                    <a href="tel:6281288788836">+6281288788836 (Mobilku)</a>
+                    <a href="tel:02155723936">021-55723936</a>
                   </li>
                 </ul>
               </div>
