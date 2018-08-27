@@ -9,7 +9,7 @@ export default class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-4">
-                <h5 className="font-weight-bold">Head Office</h5>
+                <h5 className="font-weight-bold">Head Office WOM Finance</h5>
                 <span className="font-weight-bold">Altira Office Tower</span>
                 <p>
                   Jl. Yos Sudarso Kav.85 Suter Jaya Tanjung Priok, Jakarta Utara
