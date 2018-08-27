@@ -9,7 +9,7 @@ export default class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-4">
-                <h5 className="font-weight-bold">Alamat</h5>
+                <h5 className="font-weight-bold">Head Office</h5>
                 <span className="font-weight-bold">Altira Office Tower</span>
                 <p>
                   Jl. Yos Sudarso Kav.85 Suter Jaya Tanjung Priok, Jakarta Utara
@@ -19,10 +19,14 @@ export default class Footer extends Component {
                 <h5 className="font-weight-bold">Kontak Telepon</h5>
                 <ul>
                   <li>
-                    <a href="tel:081385689789">0813-85-689-789</a>
+                    <a href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku">
+                      +6281385689789 (Motorku)
+                    </a>
                   </li>
                   <li>
-                    <a href="tel:02155723936">021-55723936</a>
+                    <a href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku">
+                      +6281288788836 (Mobilku)
+                    </a>
                   </li>
                 </ul>
               </div>
