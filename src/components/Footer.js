@@ -19,14 +19,10 @@ export default class Footer extends Component {
                 <h5 className="font-weight-bold">Kontak Telepon</h5>
                 <ul>
                   <li>
-                    <a href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku">
-                      +6281385689789 (Motorku)
-                    </a>
+                    <a href="tel:6281385689789">+6281385689789 (Motorku)</a>
                   </li>
                   <li>
-                    <a href="https://wa.me/6281288788836?text=Halo%20Team%20Mobilku">
-                      +6281288788836 (Mobilku)
-                    </a>
+                    <a href="tel:6281288788836">+6281288788836 (Mobilku)</a>
                   </li>
                 </ul>
               </div>
