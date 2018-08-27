@@ -4,9 +4,9 @@ import LazyLoad from "react-lazyload";
 import Placeholder from "./Placeholder";
 
 // Gambar Slide
-import slide1 from "../../images/banner_1.jpg";
-import slide2 from "../../images/banner_2.jpg";
-import slide3 from "../../images/banner_3.jpg";
+import slide1 from "../images/banner_1.jpg";
+import slide2 from "../images/banner_2.jpg";
+import slide3 from "../images/banner_3.jpg";
 
 export default class Slider extends Component {
   render() {

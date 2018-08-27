@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
 
 // SECTION
-import Slider from "./components/Slider";
+import Slider from "./../components/Slider";
 import Persyaratan from "./section/Persyaratan";
 import Statistik from "./section/Statistik";
 import ShortKelebihanWom from "./section/ShortKelebihanWom";
