@@ -114,6 +114,7 @@ export default class Mobil extends Component {
       id: choosenMobil,
       nama: event.target.nama.value,
       no_tlp: event.target.no_tlp.value,
+      alamat: event.target.alamat.value,
       kota: choosenKota,
       pinjaman: rupiah,
       tenor: event.target.tenorPinjaman.value
@@ -221,6 +222,16 @@ export default class Mobil extends Component {
                     {/* <small className="form-text text-muted">
                       Kami membutuhkannya untuk mencari kantor cabang terdekat
                     </small> */}
+                  </div>
+                  <div className="form-group">
+                    <label>Alamat</label>
+                    <input
+                      className="form-control active-input"
+                      type="text"
+                      name="alamat"
+                      placeholder="Alamat Lengkap"
+                      required=""
+                    />
                   </div>
                   <div className="form-group">
                     <label>Jenis Kendaraan</label>
