@@ -1,95 +1,24 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
-// section
-import Persyaratan from "./section/Persyaratan";
-import Statistik from "./section/Statistik";
-
-// Males load
 import LazyLoad from "react-lazyload";
 
-import slide1 from "../images/banner_1.jpg";
-import slide2 from "../images/banner_2.jpg";
-import slide3 from "../images/banner_3.jpg";
+// SECTION
+import Slider from "./components/Slider";
+import Persyaratan from "./section/Persyaratan";
+import Statistik from "./section/Statistik";
+import ShortKelebihanWom from "./section/ShortKelebihanWom";
 
-// pelajari
+// Some Icon & Images
 import money from "../images/money.svg";
-
-// partnership
 import wom from "../images/partner/wom.png";
 import appi from "../images/partner/appi.png";
 import ojk from "../images/partner/ojk.png";
-
-import ShortKelebihanWom from "./section/ShortKelebihanWom";
 
 export default class Home extends Component {
   render() {
     return (
       <section>
-        <header>
-          <div
-            id="carouselExampleIndicators"
-            className="carousel slide"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to={0}
-                className="active"
-              />
-              <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-              <li data-target="#carouselExampleIndicators" data-slide-to={2} />
-            </ol>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <LazyLoad offset={100} once>
-                  <img
-                    className="d-block w-100"
-                    src={slide1}
-                    alt="First slide"
-                  />
-                </LazyLoad>
-              </div>
-              <div className="carousel-item">
-                <LazyLoad offset={100} once>
-                  <img
-                    className="d-block w-100"
-                    src={slide2}
-                    alt="First slide"
-                  />
-                </LazyLoad>
-              </div>
-              <div className="carousel-item">
-                <LazyLoad offset={100} once>
-                  <img
-                    className="d-block w-100"
-                    src={slide3}
-                    alt="First slide"
-                  />
-                </LazyLoad>
-              </div>
-            </div>
-            <a
-              className="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span className="carousel-control-next-icon" aria-hidden="true" />
-              <span className="sr-only">Next</span>
-            </a>
-          </div>
-        </header>
+        <Slider />
 
         <div id="pilih-simulasi">
           <div className="container">
@@ -204,7 +133,7 @@ export default class Home extends Component {
                   pelanggan dapat terlayani dengan cepat, tepat, efektif, dan
                   efisien.
                 </p>
-                <a className="btn btn-info" href="he" role="button">
+                <a className="btn btn-info disabled" href="" role="button">
                   <i className="fas fa-plus" style={{ marginRight: 10 }} />
                   Selengkapnya
                 </a>
