@@ -119,9 +119,14 @@ export default class Header extends Component {
           <div className="collapse navbar-collapse" id="navcol-1">
             <ul className="nav navbar-nav mr-auto">
               <li className="nav-item" role="presentation">
-                <a className="nav-link active" href="https://about.mybpkb.com">
-                  Tentang Kami
-                </a>
+                <Link className="nav-link active" to="/simulasi/mobil">
+                  Simulasi Mobil
+                </Link>
+              </li>
+              <li className="nav-item" role="presentation">
+                <Link className="nav-link active" to="/simulasi/motor">
+                  Simulasi Motor
+                </Link>
               </li>
               <li className="nav-item" role="presentation">
                 <Link className="nav-link active" to="/faq">
@@ -135,17 +140,6 @@ export default class Header extends Component {
               </li>
             </ul>
             <ul className="navbar-nav">
-              <li className="nav-item" role="presentation">
-                <Link className="nav-link active" to="/simulasi/mobil">
-                  Simulasi Mobil
-                </Link>
-              </li>
-              <li className="nav-item" role="presentation">
-                <Link className="nav-link active" to="/simulasi/motor">
-                  Simulasi Motor
-                </Link>
-              </li>
-
               <li className="nav-item d-none d-md-block" role="presentation">
                 <button
                   type="button"

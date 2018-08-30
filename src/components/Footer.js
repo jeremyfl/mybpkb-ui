@@ -33,9 +33,6 @@ export default class Footer extends Component {
                 <h5 className="font-weight-bold">Info Lainnya</h5>
                 <ul>
                   <li>
-                    <a href="https://about.mybpkb.com">Tentang Kami</a>
-                  </li>
-                  <li>
                     <Link to="/simulasi/mobil">Gadai BPKB Mobil</Link>
                   </li>
                   <li>
