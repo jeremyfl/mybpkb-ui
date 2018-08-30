@@ -115,12 +115,17 @@ export default class Home extends Component {
 
         <div id="about-wom">
           <div className="container">
-            <h3>Apa itu WOM Finance?</h3>
+            <h3 style={{ paddingBottom: 15 }}>Tentang WOM Finance</h3>
             <p>
               PT Wahana Ottomitra Multiartha Tbk (“WOM Finance” atau Perseroan)
               Didirikan pada tahun 1982 dengan nama PT Jakarta Tokyo Leasing
               yang bergerak di bidang pembiayaan sepeda motor, khususnya
-              pembiayaan untuk sepeda motor merek Honda.
+              pembiayaan untuk sepeda motor merek Honda. Perseroan mengubah nama
+              menjadi PT Wahana Ottomitra Multiartha pada Tahun 2000 sejalan
+              dengan transformasi bisnis yang dilakukan. Perseroan terus
+              mengalami perkembangan dan tidak hanya melayani pembiayaan sepeda
+              motor merek Honda namun melayani pula pembiayaan sepeda motor
+              merek Jepang lainnya, seperti Yamaha, Suzuki dan Kawasaki.
             </p>
             <p>
               Perseroan terus berupaya untuk mewujudkan visi Perseroan menjadi
@@ -141,7 +146,7 @@ export default class Home extends Component {
               <div className="row">
                 <div className="col-4">
                   <LazyLoad once>
-                    <img className="img-fluid" src={wom} alt="" />
+                    <img className="img-fluid" src={ojk} alt="" />
                   </LazyLoad>
                 </div>
                 <div className="col-4">
@@ -151,7 +156,7 @@ export default class Home extends Component {
                 </div>
                 <div className="col-4">
                   <LazyLoad once>
-                    <img className="img-fluid" src={ojk} alt="" />
+                    <img className="img-fluid" src={wom} alt="" />
                   </LazyLoad>
                 </div>
               </div>
