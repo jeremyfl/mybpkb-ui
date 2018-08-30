@@ -1,6 +1,12 @@
 /* import all good css */
 @import url("easy-autocomplete.min.css");
 @import url("animate.min.css");
+@import url("fonts/fonts.css");
+
+body {
+  font-family: "Proxima Nova", Georgia, sans-serif;
+  background-color: #f8f8f8;
+}
 
 nav {
   background: #0f1944;
@@ -196,12 +202,9 @@ footer {
 footer .link {
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #222e60;
 }
 footer .copyright {
   padding: 10px 0;
-  background: black;
-  background-color: #0f1944;
 }
 
 footer .link ul {
@@ -213,7 +216,7 @@ footer .link ul li {
   margin: 10px 0;
 }
 footer .link ul li a {
-  color: white;
+  color: black;
 }
 
 /* Button */

@@ -18,13 +18,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div
-          style={{
-            backgroundColor: "#F1F3F5",
-            height: "100%",
-            minHeight: "100vh"
-          }}
-        >
+        <div>
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />

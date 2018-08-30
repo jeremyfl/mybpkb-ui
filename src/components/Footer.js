@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="text-light">
+      <footer>
         <div className="link">
           <div className="container">
             <div className="row">
@@ -44,7 +44,7 @@ export default class Footer extends Component {
           </div>
         </div>
 
-        <div className="text-center copyright">
+        <div className="text-left copyright">
           <div className="container">
             <span>
               <strong>Copyright 2018 MyBPKB</strong>
