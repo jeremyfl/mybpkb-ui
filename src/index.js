@@ -15,7 +15,9 @@ if (
   server === "127.0.0.1:3000" ||
   server === "127.0.0.1:3334" ||
   server === "localhost:3000" ||
-  server === "localhost:3344"
+  server === "localhost:3344" ||
+  server === "localhost:3333" ||
+  server === "127.0.0.1:3333"
 ) {
   axios.defaults.baseURL = "http://127.0.0.1:3333/";
 } else {
