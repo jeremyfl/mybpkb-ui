@@ -22,7 +22,7 @@ export default class Footer extends Component {
                 <h5 className="font-weight-bold">Direct Mobilku & Motorku</h5>
                 <ul>
                   <li>
-                    <a href="tel:081385689789">0813-85-689-789</a>
+                    <a href="tel:081288788836">0812-8878-8836</a>
                   </li>
                   <li>
                     <a href="tel:02155723936">021-55723936</a>
