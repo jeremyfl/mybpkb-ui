@@ -8,17 +8,14 @@ export default class Footer extends Component {
         <div className="link">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3">
+              <div className="col-lg-4">
                 <h5 className="font-weight-bold">Head Office WOM Finance</h5>
                 <span className="font-weight-bold">Altira Office Tower</span>
                 <p>
                   Jl. Yos Sudarso Kav.85 Suter Jaya Tanjung Priok, Jakarta Utara
                 </p>
               </div>
-              <div className="col-lg-3">
-                <h5 className="font-weight-bold">Partnership</h5>
-              </div>
-              <div className="col-lg-3">
+              <div className="col-lg-4">
                 <h5 className="font-weight-bold">Direct Mobilku & Motorku</h5>
                 <ul>
                   <li>
@@ -29,7 +26,7 @@ export default class Footer extends Component {
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-4">
                 <h5 className="font-weight-bold">Info Lainnya</h5>
                 <ul>
                   <li>
