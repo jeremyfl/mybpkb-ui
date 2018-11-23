@@ -376,7 +376,7 @@ export default class Motor extends Component {
                 </Link>
 
                 <a
-                  href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku"
+                  href="https://wa.me/6281284168409?text=Halo%20Team%20Motorku"
                   style={{ marginBottom: 50, marginLeft: 5, color: "white" }}
                   role="button"
                   className="btn btn-whatsapp"

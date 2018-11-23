@@ -48,7 +48,7 @@ export default class Header extends Component {
                     <div className="row">
                       <div className="col-6">
                         <a
-                          href="https://wa.me/6281385689789?text=Halo%20Team%20Motorku"
+                          href="https://wa.me/6281284168409?text=Halo%20Team%20Motorku"
                           role="button"
                           className="btn btn-success btn-block"
                           style={{ color: "white" }}

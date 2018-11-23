@@ -46,7 +46,7 @@ export default class Home extends Component {
                     Simulasi Gadai BPKB Motor
                   </Link>
                   <a
-                    href="https://api.whatsapp.com/send?phone=6281288788836"
+                    href="http://api.whatsapp.com/send?phone=6282135883588&text=Halo%20kak..%20Saya%20ingin%20mengetahui%20simulasi%20pencairan%20kendaraan%20saya%20sebagai%20berikut%20%3A%0A%0ANama%20%3A%0AAlamat%20%3A%0AKota%20%3A%0ANo%20Hp%20%3A%0AMerk%2C%20type%20%26%20tahun%20kendaraan%20%3A%0A%0ATerima%20kasih."
                     className="list-group-item"
                   >
                     <i className="fas fa-truck" style={{ marginRight: 10 }} />
