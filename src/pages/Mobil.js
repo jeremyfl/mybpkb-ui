@@ -113,6 +113,7 @@ export default class Mobil extends Component {
     const request = {
       id: choosenMobil,
       nama: event.target.nama.value,
+      email: event.target.email.value,
       no_tlp: event.target.no_tlp.value,
       alamat: event.target.alamat.value,
       kota: choosenKota,
@@ -192,6 +193,16 @@ export default class Mobil extends Component {
                       type="text"
                       name="nama"
                       placeholder="Nama Lengkap"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Email</label>
+                    <input
+                      className="form-control active-input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
                       required
                     />
                   </div>
