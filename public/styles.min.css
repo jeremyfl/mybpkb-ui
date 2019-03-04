@@ -1,0 +1,230 @@
+/* import all good css */
+@import url("easy-autocomplete.min.css");
+@import url("animate.min.css");
+/* @import url("fonts/fonts.css"); */
+
+body {
+  font-family: "Proxima Nova", Georgia, sans-serif;
+  background-color: #f8f8f8;
+}
+
+h3 {
+  font-family: "proxima_nova_ltsemibold";
+}
+
+nav {
+  background: #0f1944;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+.gedung-wom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("https://image.ibb.co/e4xUZT/gedungwom.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+/* Halaman FAQ */
+.office-wom {
+  background-image: linear-gradient(
+      rgba(34, 46, 96, 0.9),
+      rgba(34, 46, 96, 0.8)
+    ),
+    url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.highlight-blue {
+  color: #fff;
+  background-color: #222e60;
+  padding: 50px 0;
+}
+.highlight-blue p {
+  color: #c4d5ef;
+  line-height: 1.5;
+}
+.highlight-blue h2 {
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+.highlight-blue .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+.highlight-blue .buttons {
+  text-align: center;
+}
+.highlight-blue .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: 0 0;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+.highlight-blue .buttons .btn:hover {
+  opacity: 1;
+}
+.highlight-blue .buttons .btn:active {
+  transform: translateY(1px);
+}
+.highlight-blue .buttons .btn-primary,
+.highlight-blue .buttons .btn-primary:active {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  color: #ebeff1;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 14px 24px;
+  background: 0 0;
+  transition: background-color 0.25s;
+}
+
+.button-pilihan-harga {
+  /* margin-left: 10px; */
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.card-formulir {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+
+#pilih-simulasi {
+  margin: 20px 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* Universial Variable */
+.white-bg {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background: white;
+  margin: 20px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.white-bg h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img-bottom {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.ilustration img {
+  width: 90px;
+  height: 90px;
+  margin: 20px 0;
+}
+
+/* End Universal Variable */
+
+#persyaratan {
+  margin: 20px 0;
+  padding-top: 30px;
+}
+#persyaratan .ilustration {
+  margin: 50px 0;
+}
+
+#about-wom,
+#partnership {
+  padding: 40px 0;
+}
+
+#about-wom img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+#kelebihan-wom img {
+  width: 50px;
+  height: 50px;
+}
+
+#partnership img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+@media (max-width: 575.98px) {
+  #persyaratan .ilustration {
+    margin: 30px 0;
+  }
+  #persyaratan img {
+    width: 60px;
+    height: 60px;
+  }
+  #persyaratan h4 {
+    font-size: 19px;
+  }
+  #persyaratan h4 small {
+    font-size: 10px;
+  }
+}
+
+/* Carousel */
+#carouselExampleIndicators {
+  background: #222e60;
+  color: white;
+  padding: 30px 0;
+}
+#placeholder {
+  background: #222e60;
+  color: white;
+  padding: 30px 0;
+  height: 200px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+footer {
+  width: 100%;
+}
+
+footer .link {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+footer .copyright {
+  padding: 10px 0;
+}
+
+footer .link ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer .link ul li {
+  margin: 10px 0;
+}
+footer .link ul li a {
+  color: black;
+}
+
+/* Button */
+.btn-whatsapp {
+  color: white;
+  background: #25d366;
+}
