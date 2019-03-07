@@ -10,10 +10,6 @@ import Motor from "./pages/Motor";
 import Pertanyaan from "./pages/Pertanyaan";
 import Contact from "./pages/Contact";
 
-import ReactGA from "react-ga";
-ReactGA.initialize("UA-69507016-2");
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 class App extends Component {
   render() {
     return (
