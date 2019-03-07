@@ -1,7 +1,6 @@
 /* import all good css */
 @import url("easy-autocomplete.min.css");
 @import url("animate.min.css");
-/* @import url("fonts/fonts.css"); */
 
 body {
   font-family: "Proxima Nova", Georgia, sans-serif;
